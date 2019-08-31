@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  gatsby-service:
+    build: ./public-site
+    image: gatsby-docker-base
+    container_name: gatsby-starter
