@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const ToolsIndexPage = () => (
   <Layout>
-    <SEO title="David Poindexter - Tools and Tech" />
+    <SEO title="Tools and Tech" description="Tools and Technologies that David Poindexter prefers and has experience with. Reviews, ratings, and alternatives."/>
     <h1>Tools &amp; Tech</h1>
 
     <p>The tools and tech I use and love.</p>

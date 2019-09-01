@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const WorkPage = () => (
   <Layout>
-    <SEO title="David Poindexter's Work Info" />
+    <SEO title="Work" description="David Poindexter's resume, work experience, work goals, and professional expertise."/>
     <h1>Work</h1>
 
     <p>Here is what I can do for others.</p>

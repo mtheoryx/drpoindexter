@@ -11,6 +11,7 @@ services:
     command: npm run develop -- -H 0.0.0.0
     ports:
       - 8000:8000
+      - 9000:9000
     volumes:
       - /usr/app/node_modules
       - ./public-site:/usr/app

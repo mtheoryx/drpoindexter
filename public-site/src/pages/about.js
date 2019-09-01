@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="About David Poindexter" />
+    <SEO title="About" description="David Poindexter's work, thoughts, innovations, and preferences."/>
     <h1>About</h1>
 
     <p>About this fella</p>

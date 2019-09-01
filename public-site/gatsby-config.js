@@ -1,10 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: `David Poindexter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `The online destination for all things Tech, Programming, Innovation, and Collaboration from David Poindexter.`,
+    author: `@mtheoryx`,
+    siteUrl: `https://www.dpoindexter.com`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: `https://www.dpoindexter.com`,
+        sitemap: `https://www.dpoindexter.com/sitemap.xml`,
+        policy: [{ userAgent: '*', disallow: '' }]
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

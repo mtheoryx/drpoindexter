@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const ProjectsIndexPage = () => (
   <Layout>
-    <SEO title="David Poindexter's Projects" />
+    <SEO title="Projects" description="Collection of David Poindexter's current project interests."/>
     <h1>Projects</h1>
 
     <p>Some Projects I'm working on</p>

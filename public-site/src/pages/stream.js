@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const StreamPage = () => (
   <Layout>
-    <SEO title="David Poindexter's Tech Stream" />
+    <SEO title="Twitch Live Stream" description="Information about David Poindexter's Live Programming stream as roberttables on Twitch."/>
     <h1>Tech Stream</h1>
 
     <p>About the stream that I produce</p>
