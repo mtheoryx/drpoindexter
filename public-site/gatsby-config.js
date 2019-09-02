@@ -1,10 +1,46 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `David Poindexter`,
+    description: `The online destination for all things Tech, Programming, Innovation, and Collaboration from David Poindexter.`,
+    author: `@mtheoryx`,
+    siteUrl: `https://www.dpoindexter.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `${__dirname}/src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-humans-txt`,
+      options: {
+        team: [
+          {
+            Developer: `David Poidnexter`,
+            Github: `mtheoryx`,
+            Twitter: `@mtheoryx`,
+          },
+        ],
+        thanks: [`Gatsby`, `AWS Amplify`, `Node`, `React`, `VS Code`, `Docker`],
+        site: {
+          "Last update": `${new Date().getMonth()}/${new Date().getDate()}/${new Date().getFullYear()}`,
+          Standards: `ECMAScript 6`,
+          Components: `Gatsby`,
+          Softwares: `VS Code`,
+        },
+        note: `Made in Indianapolis`,
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: `https://www.dpoindexter.com`,
+        sitemap: `https://www.dpoindexter.com/sitemap.xml`,
+        policy: [{ userAgent: "*", disallow: "" }],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
