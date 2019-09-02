@@ -1,3 +1,8 @@
+import React from "react"
+
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -620,3 +625,7 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+`
+
+export default GlobalStyle;
