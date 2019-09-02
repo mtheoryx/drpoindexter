@@ -1,50 +1,7 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
 
-const Navigation = () => (
-  <nav>
-    <Link
-      to="/work/"
-      style={{ color: `white`, marginRight: 10, textDecoration: `none` }}
-    >
-      Work
-    </Link>
-    <Link
-      to="/writing/"
-      style={{ color: `white`, marginRight: 10, textDecoration: `none` }}
-    >
-      Writing
-    </Link>
-    <Link
-      to="/projects/"
-      style={{ color: `white`, marginRight: 10, textDecoration: `none` }}
-    >
-      Projects
-    </Link>
-    <Link
-      to="/opensource/"
-      style={{ color: `white`, marginRight: 10, textDecoration: `none` }}
-    >
-      Open Source
-    </Link>
-    <Link
-      to="/stream/"
-      style={{ color: `white`, marginRight: 10, textDecoration: `none` }}
-    >
-      Stream
-    </Link>
-    <Link
-      to="/contact/"
-      style={{ color: `white`, marginRight: 10, textDecoration: `none` }}
-    >
-      Contact
-    </Link>
-    <Link to="/about/" style={{ color: `white`, textDecoration: `none` }}>
-      About
-    </Link>
-  </nav>
-)
+import Navigation from "./navigation"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -75,13 +32,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
