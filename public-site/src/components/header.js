@@ -36,13 +36,13 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-const HeaderComponent = ({ siteTitle }) => (
+const HeaderComponent = ({ siteTitle, navLinks }) => (
   <StyledHeader>
     <StyledHeaderWrapper>
       <StyledSiteHeading1>
         <StyledLink to="/">{siteTitle}</StyledLink>
       </StyledSiteHeading1>
-      <Navigation />
+      <Navigation navLinks={navLinks} />
     </StyledHeaderWrapper>
   </StyledHeader>
 )

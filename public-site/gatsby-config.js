@@ -4,6 +4,15 @@ module.exports = {
     description: `The online destination for all things Tech, Programming, Innovation, and Collaboration from David Poindexter.`,
     author: `@mtheoryx`,
     siteUrl: `https://www.dpoindexter.com`,
+    navLinks: [
+      { name: "work", link: "/work", published: false },
+      { name: "writing", link: "/writing", published: false },
+      { name: "projects", link: "/projects", published: false },
+      { name: "open source", link: "/opensource", published: false },
+      { name: "stream", link: "/stream", published: false },
+      { name: "about", link: "/about", published: true },
+      { name: "contact", link: "/contact", published: true },
+    ],
   },
   plugins: [
     {
