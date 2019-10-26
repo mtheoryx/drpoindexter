@@ -46,9 +46,11 @@ const Layout = ({ children }) => {
       <Container>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()} David Poindexter, Built with
+          © {new Date().getFullYear()} David Poindexter | Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org" style={{ color: "#663399" }}>
+            Gatsby
+          </a>
         </footer>
       </Container>
     </>
