@@ -4,6 +4,15 @@ module.exports = {
     description: `The online destination for all things Tech, Programming, Innovation, and Collaboration from David Poindexter.`,
     author: `@mtheoryx`,
     siteUrl: `https://www.dpoindexter.com`,
+    navLinks: [
+      { name: "work", link: "/work", published: false },
+      { name: "writing", link: "/writing", published: false },
+      { name: "projects", link: "/projects", published: false },
+      { name: "open source", link: "/opensource", published: false },
+      { name: "stream", link: "/stream", published: false },
+      { name: "about", link: "/about", published: true },
+      { name: "contact", link: "/contact", published: true },
+    ],
   },
   plugins: [
     {
@@ -63,6 +72,8 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
