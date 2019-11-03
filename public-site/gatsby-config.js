@@ -5,6 +5,7 @@ module.exports = {
     author: `@mtheoryx`,
     siteUrl: `https://www.dpoindexter.com`,
     navLinks: [
+      { name: "devtips", link: "/devtips", published: true },
       { name: "work", link: "/work", published: false },
       { name: "writing", link: "/writing", published: false },
       { name: "projects", link: "/projects", published: false },
@@ -58,6 +59,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `devtips`,
+        path: `${__dirname}/src/devtips`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -72,7 +80,25 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+            },
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+          },
+        ],
+      },
+    },
     `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
