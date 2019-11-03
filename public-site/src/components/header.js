@@ -39,10 +39,10 @@ const StyledLink = styled(Link)`
 const HeaderComponent = ({ siteTitle, navLinks }) => (
   <StyledHeader>
     <StyledHeaderWrapper>
+      <Navigation navLinks={navLinks} />
       <StyledSiteHeading1>
         <StyledLink to="/">{siteTitle}</StyledLink>
       </StyledSiteHeading1>
-      <Navigation navLinks={navLinks} />
     </StyledHeaderWrapper>
   </StyledHeader>
 )
