@@ -9,7 +9,7 @@ description: "How and Why - Hide files in VS Code to preserve privacy and avoid 
 ![Oh, whoops, just showed my keys on stream!](./secrets.png)
 
 In situations where you are showing code to others, one thing you need to always
-be aware of is "what" code you are showing. Situations include streaming on Twitch or demo code in front of a presenation audience or clients.
+be aware of is "what" code you are showing. Situations include streaming on Twitch or demo code in front of a presentation audience or clients.
 
 It's common to use an environment-loading tool like `dotenv` to pull secrets in from a file that has been hidden from source control via `.gitignore`.
 
@@ -30,6 +30,19 @@ In `settings.json`, add the following configuration, and save the file:
 ```
 
 Instantly you will see the secret files disappear from the file browser in VS Code! No more accidentally clicking it and opening in front of the whole world.
+
+## But wait, how can I undo that
+
+Pretty easy. You can delete that settings entry in your `.vscode/settings.json` file. Or, if you have a particular env file you _want_ to be visible, for example, the `.env` file in a direcory of `demo/example1`, change your `.vscode/settings.json` file to this:
+
+```javascript
+{
+  "files.exclude": {
+    "**/*.env": true,
+    "demo/example1/.env": false
+  }
+}
+```
 
 ## Wrap it up, already
 
