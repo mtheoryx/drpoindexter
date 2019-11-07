@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://www.dpoindexter.com`,
     navLinks: [
       { name: "devtips", link: "/devtips", published: true },
+      { name: "notes", link: "/notes", published: true },
       { name: "work", link: "/work", published: false },
       { name: "writing", link: "/writing", published: false },
       { name: "projects", link: "/projects", published: false },
@@ -100,6 +101,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-theme-notes`,
+      options: {
+        basePath: `/notes`,
+        contentPath: `${__dirname}/src/notes`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
