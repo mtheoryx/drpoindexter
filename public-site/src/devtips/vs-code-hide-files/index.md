@@ -17,7 +17,7 @@ However, if you accidentally click on this file, it will open in your editor, re
 
 ## How to do it
 
-In your VS Code file browser find or create a directory named `.vscode`. Inside there, find or create a file named `settings.json`.
+In your VS Code file browser find or create a directory named `.vscode`. Inside that directory, find or create a file named `settings.json`.
 
 In `settings.json`, add the following configuration, and save the file:
 
