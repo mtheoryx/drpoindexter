@@ -36,7 +36,7 @@ In `settings.json`, add the following configuration, and save the file:
 }
 ```
 
-_Note: To customize the title bars in Linux, you may need to go to Settings > Window > Title Bar Style and change it from "Native" to "Custom" Special thanksk to @phrakberg for that heads up!_
+_Note: To customize the title bars in Linux, you may need to go to Settings > Window > Title Bar Style and change it from "Native" to "Custom" Special thanks to @phrakberg for that heads up!_
 
 You can then make any of these VS Code windows uniquely colored by using the same technique. **Your rainbow awaits!**
 
