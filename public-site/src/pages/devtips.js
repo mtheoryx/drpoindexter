@@ -9,9 +9,7 @@ const DevtipsIndexPage = ({ data }) => (
       title="Development Tips and Tricks"
       description="David Poindexter's scratchpad for development tips and tricks."
     />
-    <h1>Developer Tips and Tricks</h1>
-
-    <h2>The latest tips...</h2>
+    <h2>Developer Tips and Tricks</h2>
 
     <ul>
       {data.Devtips.edges.map(({ node }) => (

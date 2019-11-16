@@ -9,7 +9,7 @@ const DevtipsIndexPage = ({ data }) => (
       title="Developer Notes"
       description="David Poindexter's scratchpad for notes."
     />
-    <h1>Notes</h1>
+    <h2>Notes</h2>
 
     <ul>
       {data.Notes.edges.map(({ node }) => (
