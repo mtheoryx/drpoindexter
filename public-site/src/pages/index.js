@@ -1,9 +1,9 @@
 import React from "react"
 import Helmet from "react-helmet"
 import styled from "styled-components"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
-
-import profile from "../images/profile-pic.png"
 
 const Container = styled.div`
   display: flex;
@@ -16,15 +16,8 @@ const Side = styled.div`
   @media screen and (min-width: 740px) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 30%;
     margin: 0 5%;
-    img {
-      align-self: center;
-      flex: 0 0 auto;
-      margin: 0;
-      padding: 0;
-    }
   }
 `
 
@@ -36,7 +29,7 @@ const Main = styled.div`
   }
 `
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Helmet
       title="Home | David Poindexter"
@@ -49,7 +42,7 @@ const IndexPage = () => (
     />
     <Container>
       <Side>
-        <img src={profile} alt="Author Profile" />
+        <Img fluid={data.profile.childImageSharp.fluid} alt="Portrait picture of David Poindexter with a sepia filter and blurred background" />
       </Side>
       <Main>
         <h2>Welcome!</h2>
@@ -79,11 +72,19 @@ const IndexPage = () => (
         </p>
         <p>
           I also stream Live Coding, IoT, and hardware 3 days a week over on{" "}
-          <a href="https://www.twitch.tv/roberttables" target="_blank">
+          <a
+            href="https://www.twitch.tv/roberttables"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             my Twitch community
           </a>
           , and I am one of the original members of the{" "}
-          <a href="https://livecoders.dev/" target="_blank">
+          <a
+            href="https://livecoders.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Twitch Live Coders Team
           </a>
           .
@@ -94,3 +95,15 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    profile: file(relativePath: { eq: "profile-pic.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 460) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

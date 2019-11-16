@@ -1,7 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const ContactPage = () => (
   <Layout>
@@ -20,17 +19,29 @@ const ContactPage = () => (
 
     <ul>
       <li>
-        <a href="https://twitter.com/drpoindexter" target="_blank">
+        <a
+          href="https://twitter.com/drpoindexter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Twitter
         </a>
       </li>
       <li>
-        <a href="https://github.com/mtheoryx" target="_blank">
+        <a
+          href="https://github.com/mtheoryx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Github
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/drpoindexter/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/drpoindexter/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LinkedIn
         </a>
       </li>
@@ -38,6 +49,7 @@ const ContactPage = () => (
         <a
           href="mailto:drpoindexter+inquiry@gmail.com?subject=Contact from the DRP Website&amp;body=I found your website and I'd like to say ..."
           target="_blank"
+          rel="noopener noreferrer"
         >
           Email
         </a>

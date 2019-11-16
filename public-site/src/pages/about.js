@@ -1,7 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
@@ -34,7 +33,14 @@ const IndexPage = () => (
 
     <p>
       I'm currently an AWS Cloud Architect, senior consultant, and Practice Lead
-      at <a href="https://www.cleanslatetg.com/">Cleanslate Technology Group</a>
+      at{" "}
+      <a
+        href="https://www.cleanslatetg.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Cleanslate Technology Group
+      </a>
       . It's my first experience with consulting, and it's quite exciting and
       motivating to me.
     </p>
