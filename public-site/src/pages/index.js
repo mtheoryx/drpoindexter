@@ -32,6 +32,9 @@ const Main = styled.div`
 const IndexPage = ({ data }) => (
   <Layout>
     <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
       title="Home | David Poindexter"
       meta={[
         {
@@ -42,7 +45,10 @@ const IndexPage = ({ data }) => (
     />
     <Container>
       <Side>
-        <Img fluid={data.profile.childImageSharp.fluid} alt="Portrait picture of David Poindexter with a sepia filter and blurred background" />
+        <Img
+          fluid={data.profile.childImageSharp.fluid}
+          alt="Portrait picture of David Poindexter with a sepia filter and blurred background"
+        />
       </Side>
       <Main>
         <h2>Welcome!</h2>
@@ -100,7 +106,7 @@ export const query = graphql`
   query {
     profile: file(relativePath: { eq: "profile-pic.png" }) {
       childImageSharp {
-        fluid(maxWidth: 460) {
+        fluid(maxWidth: 277) {
           ...GatsbyImageSharpFluid
         }
       }

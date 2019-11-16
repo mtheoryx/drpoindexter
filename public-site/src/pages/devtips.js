@@ -1,13 +1,21 @@
 import React from "react"
+import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const DevtipsIndexPage = ({ data }) => (
   <Layout>
-    <SEO
-      title="Development Tips and Tricks"
-      description="David Poindexter's scratchpad for development tips and tricks."
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+      title="DevTips | David Poindexter"
+      meta={[
+        {
+          name: "description",
+          content: "Development Tips and Tricks on David Poindexter site",
+        },
+      ]}
     />
     <h2>Developer Tips and Tricks</h2>
 

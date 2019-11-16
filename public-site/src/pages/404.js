@@ -1,12 +1,22 @@
 import React from "react"
-
+import Helmet from "react-helmet"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" description="404 error page" />
-    <h1>NOT FOUND</h1>
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+      title="404: Not found"
+      meta={[
+        {
+          name: "description",
+          content: "Page not found on David Poindexter",
+        },
+      ]}
+    />
+    <h2>NOT FOUND</h2>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
   </Layout>
 )

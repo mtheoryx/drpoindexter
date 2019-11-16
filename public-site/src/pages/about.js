@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 const IndexPage = () => (
   <Layout>
     <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
       title="About | David Poindexter"
       meta={[
         {

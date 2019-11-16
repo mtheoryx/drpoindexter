@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 const ContactPage = () => (
   <Layout>
     <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
       title="Contact | David Poindexter"
       meta={[
         {
