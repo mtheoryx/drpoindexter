@@ -37,18 +37,6 @@ exports.createPages = ({ graphql, actions }) => {
           slug: node.fields.slug,
         },
       })
-      // if (
-      //   node.fileAbsolutePath &&
-      //   node.fileAbsolutePath.includes("/devtips/")
-      // ) {
-      //   createPage({
-      //     path: node.fields.slug,
-      //     component: path.resolve(`./src/templates/devtips.js`),
-      //     context: {
-      //       slug: node.fields.slug,
-      //     },
-      //   })
-      // }
     })
   })
 }

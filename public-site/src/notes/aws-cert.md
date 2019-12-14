@@ -4,35 +4,36 @@ title: "What Cert should I get?"
 
 ## What are they and why do they matter
 
-AWS, like most other vendor of... well, anything, has a certification program. These are used to validate basic competancy in a few areas. It can be related to services, application experience, domain knowledge, or a mis of all three. Obtaining a certification will be an act in 3 parts:
+AWS, like most other vendors of... well, anything, has a certification program. These are used to validate basic competency in a few areas. It can be related to services, application experience, domain knowledge, or a mix of all three. Obtaining a certification will be an act in 3 parts:
 
 1. Study, and know the stuff
-1. Scheule a test (and pay for a test, depending on the certification level)
+1. Schedule a test (and pay for an exam, depending on the certification level)
 1. Pass the test and share that news everywhere you can, congrats!
 
-So lets dive into the types of vendor-certified...
+So let's dive into the types of vendor-certified.
 
-### Accreditations (no cost, not proctored exam, don't expire)
+### Accreditations (no cost, not a proctored exam, don't expire)
 
-These are tests that anyone can take. No prerequeites required. There is not proctor exam fee. And if you fail you can re-test as many times as you require to pass. Because of this, although they do contain validation of important topics, are no regarded as a signifier at particularly special credentials, nor recognized at events.
+These are tests that anyone can take, there are no prerequisites required, and there are no exam fees. And if you fail, you can re-test as many times as you need to pass. Because of this, although they do contain validation of valuable concepts, they are not regarded as a technical credential.
 
-For exmaple, you will not get into the "certified lounge" at re:invent or other regional conferences with just these credentials. Ask me for a funny storry about that one ;)
+Good to know: you will not get into the "certified lounge" at "re:invent" or other regional conferences with just these credentials. Ask me for a funny story about that one ;)
 
-So here are the accredidation courses:
+So here are the accreditation courses:
 
 - AWS Technical Professional
 - AWS Cloud Economics
 - AWS STP: Foundations (technical)
 - AWS Cloud Practitioner Essentials
 
-### Certifications (pay to testing center, proctored exam, expire in 3 years, require full-test renewal)
+### Certifications
 
 Key points:
 
-- You pay to take these
-- The credentials don't last forever, 3 years is the current validation time frame
-- You will need to recertify to keep "current"
-- The "current" status is verifialble in public, via a unique id
+- You pay to take these exams
+- They are proctored exams
+- The credentials don't last forever and three years is the current expiration
+- You will need to recertify to keep a valid certification
+- The "current" status is provable in public, via a unique id
 
 ## Certification Types
 
@@ -61,11 +62,11 @@ Key points:
 
 ## Recommended order (from my perspective)
 
-1. All 3 accredidations for every person in your company that will work in or develop in the cloud. Table stakes.
+1. All three accreditations for every person in your company that will work in or develop in the cloud. Table stakes.
 1. Cloud practitioner for sales and technicians.
 1. One of the Associates, as a starting point.
-1. The other two associates, before you go for professional at all.
-1. A speciality, based on need or job role.
+1. The other two associates, before you go for a Professional-level certification
+1. A Specialty-level certification, based on need or job role.
 1. A pro in your field.
 
 And then get the rest, like pokemon. Hecc, it can't hurt.
