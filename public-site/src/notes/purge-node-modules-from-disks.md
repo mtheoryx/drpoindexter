@@ -34,9 +34,11 @@ We take that output, and basically just run remove on every single one of them. 
 
 ```bash
 find . -type d -name "node_modules" -mindepth 3 -maxdepth 4 | wc -l
-find . -type d -name "node_modules" -mindepth 3 -maxdepth 7 | awk '{print \$1}' | xargs rm -r
+find . -type d -name "node_modules" -mindepth 3 -maxdepth 7 | awk '{print $1}' | xargs rm -r
 
 tree -L 8 -f | grep node_modules
 ```
+
+**Note**: This worked on a Mac, other systems may need changes to the positioning of arguments for the `find` command. Thanks [@talves](https://twitter.com/3_Alves) for that double-check!
 
 The result was that my disk usage was reduced from 96% used to only 42% used. And the beauty of it is that any of those can be restored with `npm install`.
