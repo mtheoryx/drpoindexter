@@ -53,29 +53,29 @@ const IndexPage = ({ data }) => (
       <Main>
         <h2>Welcome!</h2>
         <p>
-          You're here because you're looking for content. Find that in the
-          navigation above!
-        </p>
-        <h3>What you'll find here</h3>
-
-        <p>
-          I want to share some things I've learned over a pretty long career,
-          and raise discussions with the tech community at large.
-        </p>
-
-        <p>
-          Topics can range from programming, Docker, and AWS to developer
-          insights, navigating an employment landscape, and trends I notice in
-          the industry.
-        </p>
-
-        <h3>Wait, who even are you?</h3>
-
-        <p>
           I'm a midwestern technologist. I primarily came from media production,
           then custom app dev. After quite a while I transitioned to DevOps and
           Cloud Architecture.
         </p>
+
+        <h3>What you'll find here</h3>
+
+        <p>
+          A collection of things I learn along the way, sometimes really
+          interesting, sometimes small observations. I keep collections of
+          notes, a produce some more structured content in the form of devtips.
+        </p>
+        <ul>
+          <li>Programming (mostly Node/JS)</li>
+          <li>Hardware (IoT and other fun stuff)</li>
+          <li>Docker! Lots of Docker</li>
+          <li>AWS architecture and hands-on experience</li>
+          <li>Industry observations</li>
+          <li>Content and media production</li>
+        </ul>
+
+        <h3>Some Extras</h3>
+
         <p>
           I also stream Live Coding, IoT, and hardware 3 days a week over on{" "}
           <a
