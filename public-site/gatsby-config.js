@@ -57,21 +57,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `devtips`,
-        path: `${__dirname}/src/devtips`,
+        path: `${__dirname}/src/devtips/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `notes`,
-        path: `${__dirname}/src/notes`,
+        path: `${__dirname}/src/notes/`,
       },
     },
     `gatsby-transformer-sharp`,
