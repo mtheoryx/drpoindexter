@@ -20,6 +20,7 @@ const StyledHeaderWrapper = styled(HeaderWrapper)`
   margin: 0 auto;
   max-width: 960;
   padding: 1.45rem 1.0875rem;
+  border-bottom: 5px solid #0abf0a;
 `
 
 const Header = ({ className, children }) => (

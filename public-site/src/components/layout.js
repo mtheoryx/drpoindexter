@@ -87,7 +87,7 @@ const Layout = ({ children }) => {
             rel="noopener noreferrer"
             style={{ color: "#663399" }}
           >
-            Deployed on AWS Amplify
+            AWS Amplify
           </a>
         </footer>
       </Container>

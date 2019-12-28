@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { BackToListNav } from "../components/navigation"
 
 const DevtipsDetailTemplate = ({ data }) => (
   <Layout>
@@ -9,6 +10,7 @@ const DevtipsDetailTemplate = ({ data }) => (
       title={data.markdownRemark.frontmatter.title}
       description={data.markdownRemark.frontmatter.description}
     />
+    <BackToListNav destination="/devtips/" name="Back to devtips" />
     <h4>{data.markdownRemark.frontmatter.title}</h4>
     <p>{data.markdownRemark.frontmatter.date}</p>
     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />

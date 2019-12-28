@@ -3,6 +3,16 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { toTitleCase } from "../utils/strings"
 
+const BackToListBase = ({ className, destination = "", name = "" }) => (
+  <div className={className}>
+    <Link to={destination}>&#8656; {toTitleCase(name)}</Link>
+  </div>
+)
+
+export const BackToListNav = styled(BackToListBase)`
+  margin-bottom: 15px;
+`
+
 const BaseNavigation = ({ className, navLinks }) => (
   <nav className={className}>
     {navLinks
