@@ -12,7 +12,7 @@ const IndexPage = () => (
       meta={[
         {
           name: "description",
-          content: "Backgrond information about David Poindexter",
+          content: "Background information about David Poindexter",
         },
       ]}
     />
@@ -32,7 +32,7 @@ const IndexPage = () => (
       and medical industries.
     </p>
 
-    <h3>Currently in Consulting</h3>
+    <h3>Currently Working: In Consulting</h3>
 
     <p>
       I'm currently an AWS Cloud Architect, senior consultant, and Practice Lead
@@ -55,7 +55,7 @@ const IndexPage = () => (
       see the client's delight at the results.
     </p>
 
-    <h3>Currently in Twitch</h3>
+    <h3>Currently Sharing: On Twitch</h3>
 
     <p>
       Particular technology I'm interested in now include Gatsby, React,

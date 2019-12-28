@@ -2,8 +2,8 @@ import React from "react"
 import Helmet from "react-helmet"
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
+import { RoundImage } from "../components/profileImage"
 
 const Container = styled.div`
   display: flex;
@@ -45,8 +45,12 @@ const IndexPage = ({ data }) => (
     />
     <Container>
       <Side>
-        <Img
+        {/* <Img
           fluid={data.profile.childImageSharp.fluid}
+          alt="Portrait picture of David Poindexter with a sepia filter and blurred background"
+        /> */}
+        <RoundImage
+          src={data.profile.childImageSharp.fluid}
           alt="Portrait picture of David Poindexter with a sepia filter and blurred background"
         />
       </Side>
