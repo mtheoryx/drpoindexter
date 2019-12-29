@@ -9,8 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-
 import Header from "./header"
+import Footer from "./footer"
 import GlobalStyle from "./globalStyle.js"
 
 const Container = styled.div`
@@ -44,52 +44,10 @@ const Layout = ({ children }) => {
         navLinks={data.site.siteMetadata.navLinks}
       />
       <Container>
-        <main>{children}</main>
-        <hr />
-        <footer>
-          <a
-            href="https://media.giphy.com/media/PJoLp4gDIqjYs/giphy.gif"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#663399" }}
-          >
-            © {new Date().getFullYear()}
-          </a>{" "}
-          <a
-            href="https://www.dpoindexter.com/"
-            style={{ color: "#663399" }}
-            rel="noopener noreferrer"
-          >
-            David Poindexter
-          </a>{" "}
-          |{` `}
-          <a
-            href="https://www.gatsbyjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#663399" }}
-          >
-            Built with Gatsby
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://www.gatsbyjs.org/docs/winning-over-developers/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#663399" }}
-          >
-            My Website is Faster than Yours!
-          </a>{" "}
-          |{" "}
-          <a
-            href="https://aws.amazon.com/amplify/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#663399" }}
-          >
-            AWS Amplify
-          </a>
-        </footer>
+        <main style={{ borderBottom: "1px solid grey", marginBottom: "15px" }}>
+          {children}
+        </main>
+        <Footer />
       </Container>
     </>
   )
