@@ -48,15 +48,6 @@ const ContactPage = () => (
           LinkedIn
         </a>
       </li>
-      <li>
-        <a
-          href="mailto:drpoindexter+inquiry@gmail.com?subject=Contact from the DRP Website&amp;body=I found your website and I'd like to say ..."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Email
-        </a>
-      </li>
     </ul>
   </Layout>
 )
