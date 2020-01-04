@@ -14,7 +14,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createNodeField({
         node,
         name: `slug`,
-        value: `/devtips${relativePath}`,
+        value: `/devtips${relativeFilePath}`,
       })
     } else if (node.fileAbsolutePath.includes("/notes/")) {
       relativeFilePath = createFilePath({
