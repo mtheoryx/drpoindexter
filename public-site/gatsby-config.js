@@ -72,6 +72,7 @@ module.exports = {
       options: {
         name: `notes`,
         path: `${__dirname}/src/notes/`,
+        ignore: [`**/\.*`],
       },
     },
     `gatsby-transformer-sharp`,

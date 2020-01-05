@@ -1,15 +1,14 @@
 ---
-title: "How and Why - Hide files in VS Code"
+title: "How to Hide Sensitive Files in VS Code"
 date: "2019-11-02"
-description: "How and Why - Hide files in VS Code to preserve privacy and avoid oopsies in live production"
+description: "Hide files in VS Code to protect privacy and avoid security oopsies in live presentations and demos. This is especially important if you are a live code streamer where every one has rewind and screen capture capabilities... and they are already on a computer."
 ---
 
-# Fine then, keep your secrets
+In situations where you are showing code to others, one thing you need to be aware of is what potentially sensitive code you are showing. Situations include streaming on Twitch or demo code in front of a presentation audience or clients.
+
+## Fine then, keep your secrets
 
 ![Oh, whoops, just showed my keys on stream!](./secrets.png)
-
-In situations where you are showing code to others, one thing you need to always
-be aware of is "what" code you are showing. Situations include streaming on Twitch or demo code in front of a presentation audience or clients.
 
 It's common to use an environment-loading tool like `dotenv` to pull secrets in from a file that has been hidden from source control via `.gitignore`.
 

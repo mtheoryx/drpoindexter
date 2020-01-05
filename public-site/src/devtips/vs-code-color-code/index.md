@@ -1,14 +1,14 @@
 ---
-title: "Color Code Your Multiple VS Code Windows"
+title: "How to Color Code Your Multiple VS Code Windows"
 date: "2019-11-08"
-description: "How and Why - Color-code multiple VS Code windows to easily tell what context of code you're working in"
+description: "Color-code multiple VS Code project windows to easily tell what context of code you're working in. It is project-specific and controled by a very simple entry in your project settings file."
 ---
+
+I often find myself with a BUNCH of VS Code windows open during any given day. It could be a variety of projects, or even just different aspects of the same project.
 
 ## And you get a window, and you get a window
 
 ![Multiple Visual Studio Code windows with unique colors for the top window bar](./multiple-windows.png)
-
-I often find myself with a BUNCH of VS Code windows open during any given day. It could be a variety of projects, or even just different aspects of the same project. Here are a few common examples:
 
 - Situation 1: Frontend repo, backend repo
 - Situation 2: I know my _other_ project has what I need, open both of them!

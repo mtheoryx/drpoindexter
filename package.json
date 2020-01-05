@@ -1,0 +1,21 @@
+{
+  "name": "dpoindexter",
+  "version": "1.0.0",
+  "description": "lul todo!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new:note": "cp public-site/src/notes/.note.md public-site/src/notes/new-note.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtheoryx/drpoindexter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtheoryx/drpoindexter/issues"
+  },
+  "homepage": "https://github.com/mtheoryx/drpoindexter#readme"
+}

@@ -1,10 +1,10 @@
 ---
 title: "How to Import Existing State into Terraform"
 date: "2020-01-04"
-description: "How and Why- Import existing AWS resources into Terraform State and Code"
+description: "Gradually import existing AWS resources into Terraform State control and Infrastructure as Code version control. We'll explore a basic example of getting an existing AWS S3 bucket under control, and adding some new options to the bucket, straight from code."
 ---
 
-## What to do with existing cloud resources
+<!-- ## What to do with existing cloud resources -->
 
 Terraform is fantastic for creating and tracking resources, changes to resources, and destroying resources. But what if you already have AWS resources made long before you ever heard of Terraform? Maybe long before you even started at your company?
 

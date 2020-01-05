@@ -1,5 +1,5 @@
 ---
-title: "What Cert should I get?"
+title: "What AWS Certification should I get?"
 ---
 
 ## What are they and why do they matter

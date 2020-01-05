@@ -20,9 +20,16 @@ const DevtipsIndexPage = ({ data }) => (
     />
     <h2>Notes</h2>
 
-    <ul>
+    <ul style={{ listStyle: "none" }}>
       {data.Notes.edges.map(({ node }) => (
-        <li key={node.id}>
+        <li
+          key={node.id}
+          style={{
+            border: "1px solid #ccc",
+            padding: "8px",
+            borderRadius: "3px",
+          }}
+        >
           <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
         </li>
       ))}
@@ -41,7 +48,6 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt
           frontmatter {
             title
           }
