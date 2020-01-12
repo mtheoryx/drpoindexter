@@ -10,6 +10,9 @@ const roundImageBase = ({ className, src, alt }) => (
 export const RoundImage = styled(roundImageBase)`
   border-radius: 50%;
   border: 2px solid #663399;
+  &:hover {
+    border: 5px solid #663399;
+  }
 `
 // Regular image
 const FluidImage = ({ src, alt }) => <Img fluid={src} alt={alt} />
