@@ -8,7 +8,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
@@ -43,9 +42,7 @@
     "typography": "^0.16.19",
     "typography-theme-grand-view": "^0.16.19"
   },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
+  "devDependencies": {},
   "keywords": [
     "gatsby"
   ],
