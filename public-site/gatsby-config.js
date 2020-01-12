@@ -30,7 +30,7 @@ module.exports = {
           {
             Developer: `David Poidnexter`,
             Github: `mtheoryx`,
-            Twitter: `@mtheoryx`,
+            Twitter: `@drpoindexter`,
           },
         ],
         thanks: [`Gatsby`, `AWS Amplify`, `Node`, `React`, `VS Code`, `Docker`],
