@@ -45,10 +45,6 @@ const IndexPage = ({ data }) => (
     />
     <Container>
       <Side>
-        {/* <Img
-          fluid={data.profile.childImageSharp.fluid}
-          alt="Portrait picture of David Poindexter with a sepia filter and blurred background"
-        /> */}
         <RoundImage
           src={data.profile.childImageSharp.fluid}
           alt="Portrait picture of David Poindexter with a sepia filter and blurred background"
