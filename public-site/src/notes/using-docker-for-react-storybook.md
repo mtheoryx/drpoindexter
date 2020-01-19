@@ -1,5 +1,5 @@
 ---
-title: "Using Docker Compose for React Storybook Development
+title: "Using Docker Compose for React Storybook Development"
 ---
 
 ```yml
