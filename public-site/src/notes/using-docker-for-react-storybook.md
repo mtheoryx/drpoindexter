@@ -1,0 +1,35 @@
+---
+title: "Using Docker Compose for React Storybook Development
+---
+
+```yml
+version: "3.7"
+
+services:
+  heroines-site:
+    build:
+      context: ./public-site
+      target: develop
+    image: heroines-site
+    container_name: heroines-site
+    init: true
+    command: npm run develop -- -H 0.0.0.0
+    ports:
+      - 8000:8000
+    volumes:
+      - /usr/app/node_modules
+      - ./public-site:/usr/app
+  heroines-storybook:
+    build:
+      context: ./public-site
+      target: develop
+    image: heroines-storybook
+    container_name: heroines-storybook
+    init: true
+    command: npm run storybook
+    ports:
+      - 6006:6006
+    volumes:
+      - /usr/app/node_modules
+      - ./public-site:/usr/app
+```
