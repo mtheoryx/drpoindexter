@@ -8,7 +8,7 @@ You open the following codepen, give it permissions to your camera, and have fun
 
 [Use this Codepen forked from @thibpat](https://codepen.io/thibpat/full/bGNqVRP)
 
-Examples:
+Examples
 
 At first, you had my curiosity, now you have my attention.
 
