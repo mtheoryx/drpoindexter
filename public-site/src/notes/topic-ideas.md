@@ -6,7 +6,7 @@ If you found this page, you're in for a treat! I'm just collecting ideas to writ
 
 ## Running list of topic ideas
 
-- [ ] How I use a code article, and learn more from doing ( [from this article](https://deploy-preview-16--upbeat-easley-3c3623.netlify.com/blog/react-context) )
+- [ ] How I use a code article, and learn more from doing ( [from this article](https://prince.dev/blog/react-context) )
 - [ ] Why you need a solution architect as a friend or business resource (conversation with Lucky regarding mongo, instances, and feature rollouts)
 - [-] AWS Pinpoint for gatsby analytics, at a basic level
 - [ ] AWS code commit per-project configuration
