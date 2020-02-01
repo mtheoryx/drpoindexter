@@ -6,7 +6,9 @@ If you found this page, you're in for a treat! I'm just collecting ideas to writ
 
 ## Running list of topic ideas
 
-- [ ] AWS Pinpoint for gatsby analytics, at a basic level
+- [ ] How I use a code article, and learn more from doing (react useContext)
+- [ ] Why you need a solution architect as a friend or business resource (conversation with Lucky regarding mongo, instances, and feature rollouts)
+- [-] AWS Pinpoint for gatsby analytics, at a basic level
 - [ ] AWS code commit per-project configuration
 - [ ] Abusing the fact that the source filesystem ignore accepts a function to create a local-only file, ignored in prod, keyed off the NODE ENV var on the process
 - [ ] Terraform deprecation of quotes with interpolation and depends_on lists
@@ -14,9 +16,10 @@ If you found this page, you're in for a treat! I'm just collecting ideas to writ
 - [ ] AWS Root MFA, use hardware not virtual, and why they are very different (and this is supported by AWS Config)
 - [ ] Make "resource limits" required checkbox pre-production (autoscaling, ec2 types)
 - [ ] DR mistakes: Not all regions support all features (instance types, etc)
+- [ ] DR mistakes: Not all regions have a LOT of new instance types
 - [ ] AWS vampire costs, unattached eip, ebs volumes, etc
 - [ ] Billing alerts, budgets, and real-world examples
-- [ ] Delete your default vpcs in aws
+- [ ] Delete your default vpcs in aws, and default security groups (they can be recovered)
 - [ ] Docker latest is dangerous
 - [ ] Docker utility containers
 - [ ] Docker bootstrapping containers
