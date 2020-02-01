@@ -1,19 +1,22 @@
 import Typography from "typography"
-import grandViewTheme from "typography-theme-grand-view"
+import oceanBeachTheme from "typography-theme-ocean-beach"
 
 // @BEGIN: Typography Customizations
-grandViewTheme.headerFontFamily = ["Source Serif Pro", "georgia", "serif"]
-grandViewTheme.headerWeight = "700"
-grandViewTheme.bodyFontFamily = ["Roboto", "Helvetica", "sans-serif"]
-grandViewTheme.bodyWeight = "400"
-grandViewTheme.boldWeight = "700"
-grandViewTheme.bodyGray = "slate"
-grandViewTheme.bodyColor = "slate"
-grandViewTheme.headerColor = "#663399"
-grandViewTheme.linkColor = "#663399"
-grandViewTheme.overrideThemeStyles = options => ({
+// grandViewTheme.headerFontFamily = ["Source Serif Pro", "georgia", "serif"]
+// grandViewTheme.headerWeight = "700"
+// grandViewTheme.bodyFontFamily = ["Roboto", "Helvetica", "sans-serif"]
+// grandViewTheme.bodyWeight = "400"
+// grandViewTheme.boldWeight = "700"
+// grandViewTheme.bodyGray = "slate"
+// grandViewTheme.bodyColor = "slate"
+// grandViewTheme.headerColor = "slate"
+oceanBeachTheme.linkColor = "#663399"
+oceanBeachTheme.overrideThemeStyles = options => ({
   a: {
-    color: grandViewTheme.linkColor,
+    color: oceanBeachTheme.linkColor,
+    textShadow: `none`,
+    textDecoration: `none`,
+    backgroundImage: `none`,
   },
   "a:hover": {
     textDecoration: `underline`,
@@ -25,6 +28,6 @@ grandViewTheme.overrideThemeStyles = options => ({
 })
 // @END: Typography Customizations
 
-const typography = new Typography(grandViewTheme)
+const typography = new Typography(oceanBeachTheme)
 
 export default typography
