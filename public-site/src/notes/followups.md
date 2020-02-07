@@ -13,6 +13,7 @@ title: "Followup Friday Topics"
 ## My Followup articles and tech
 
 - [UI... in your terminal?](https://github.com/chjj/blessed)
+- Loopback with Audio Hijack
 - [Does Your Content Suck?](https://stackingthebricks.com/does-your-content-suck/)
 - [Flexbox and Grid](https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/)
 
