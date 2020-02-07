@@ -8,7 +8,7 @@ title: "Followup Friday Topics"
 - Why: Everybody collects stuff throughout the week. So when do you follow up? **Fridays!**
 - Who: [Brent Schooley](https://twitter.com/brentschooley)
 - When: Fridays at 2 pm EST
-- Where: [CheffBrent on Twitch](https://www.twitch.tv/chefbrent)
+- Where: [ChefBrent on Twitch](https://www.twitch.tv/chefbrent)
 
 ## My Followup articles and tech
 
@@ -19,7 +19,7 @@ title: "Followup Friday Topics"
 
 ## Some meta
 
-[CheffBrent](https://www.twitch.tv/chefbrent) also streams on Wednesdays at 2pm EST about all things Stream Tech! Including, but not limited to:
+[ChefBrent](https://www.twitch.tv/chefbrent) also streams on Wednesdays at 2pm EST about all things Stream Tech! Including, but not limited to:
 
 - Hardware
 - Software
