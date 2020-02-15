@@ -4,12 +4,13 @@ import { Link } from "gatsby"
 
 import Navigation from "./navigation"
 
-const SiteHeading1 = ({ className, children }) => (
-  <h1 className={className}>{children}</h1>
+const SiteHeading = ({ className, children }) => (
+  <h4 className={className}>{children}</h4>
 )
 
-const StyledSiteHeading1 = styled(SiteHeading1)`
+const StyledSiteHeading = styled(SiteHeading)`
   margin: 0;
+  font-size: 2rem;
 `
 
 const HeaderWrapper = ({ className, children }) => (
@@ -41,9 +42,9 @@ const HeaderComponent = ({ siteTitle, navLinks }) => (
   <StyledHeader>
     <StyledHeaderWrapper>
       <Navigation navLinks={navLinks} />
-      <StyledSiteHeading1>
+      <StyledSiteHeading>
         <StyledLink to="/">{siteTitle}</StyledLink>
-      </StyledSiteHeading1>
+      </StyledSiteHeading>
     </StyledHeaderWrapper>
   </StyledHeader>
 )
