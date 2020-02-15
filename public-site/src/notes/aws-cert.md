@@ -2,7 +2,7 @@
 title: "What AWS Certification should I get?"
 ---
 
-## What are they and why do they matter
+## What are AWS Certifications and are they worth it
 
 AWS, like most other vendors of... well, anything, has a certification program. These are used to validate basic competency in a few areas. It can be related to services, application experience, domain knowledge, or a mix of all three. Obtaining a certification will be an act in 3 parts:
 
