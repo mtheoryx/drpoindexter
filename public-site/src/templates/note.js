@@ -8,7 +8,7 @@ const DevtipsDetailTemplate = ({ data }) => (
   <Layout>
     <SEO title={data.markdownRemark.frontmatter.title} />
     <BackToListNav destination="/notes/" name="Back to notes" />
-    <h4>{data.markdownRemark.frontmatter.title}</h4>
+    <h1>{data.markdownRemark.frontmatter.title}</h1>
     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
   </Layout>
 )
