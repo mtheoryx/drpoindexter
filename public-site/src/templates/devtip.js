@@ -11,7 +11,7 @@ const DevtipsDetailTemplate = ({ data }) => (
       description={data.markdownRemark.frontmatter.description}
     />
     <BackToListNav destination="/devtips/" name="Back to devtips" />
-    <h4>{data.markdownRemark.frontmatter.title}</h4>
+    <h1>{data.markdownRemark.frontmatter.title}</h1>
     <p>{data.markdownRemark.frontmatter.date}</p>
     <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
   </Layout>
