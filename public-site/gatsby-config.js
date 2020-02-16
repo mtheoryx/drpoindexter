@@ -1,9 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `David Poindexter`,
-    description: `The online destination for all things Tech, Programming, Innovation, and Collaboration from David Poindexter.`,
+    description: `Colloboration, inspiration, and innovation from AWS and Docker expert David Poindexter`,
     author: `@mtheoryx`,
     siteUrl: `https://www.dpoindexter.com`,
+    url: `https://www.dpoindexter.com`,
+    twitterUserName: "@drpoindexter",
+    image: "/drp-og-test.png",
     navLinks: [
       { name: "devtips", link: "/devtips", published: true },
       { name: "notes", link: "/notes", published: true },
@@ -17,6 +20,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-printer`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

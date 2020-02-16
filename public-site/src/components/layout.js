@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Header from "./header"
 import Footer from "./footer"
-import GlobalStyle from "./globalStyle.js"
+// import GlobalStyle from "./globalStyle.js"
 
 const Container = styled.div`
   margin: 0 auto;
