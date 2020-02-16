@@ -12,12 +12,22 @@ title: "Followup Friday Topics"
 
 ## My Followup articles and tech
 
+I try to keep this up-to-date throughout the week.
+
+- [Switching from Bash to Zsh](https://scriptingosx.com/2019/07/moving-to-zsh-part-4-aliases-and-functions/)
+- [Suz Hinton's Streaming Setup](https://medium.com/@suzhinton/my-twitch-live-coding-setup-b2516672fb21)
+- [Social Cards for website sharing](https://medium.com/@jonathanusa/how-to-make-sure-your-website-is-social-media-ready-and-why-it-matters-69e760e247b1)
+- [Adding opengraph in Gatsby](https://juliangaramendy.dev/custom-open-graph-images-in-gatsby-blog/)
+
+### Reviewed on ChefBrent
+
+- [Terraform certification exams, early review](https://learn.hashicorp.com/terraform/certification/terraform-associate)
 - [UI... in your terminal?](https://github.com/chjj/blessed)
 - Loopback with Audio Hijack
 - [Does Your Content Suck?](https://stackingthebricks.com/does-your-content-suck/)
 - [Flexbox and Grid](https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/)
 
-## Some meta
+### Some meta
 
 [ChefBrent](https://www.twitch.tv/chefbrent) also streams on Wednesdays at 2pm EST about all things Stream Tech! Including, but not limited to:
 
