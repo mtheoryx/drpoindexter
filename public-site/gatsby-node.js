@@ -3,9 +3,17 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  let relativePath
+
+  // let relativePath
+  // let filePathSplit
+  let fileName
+
   if (node.internal.type === `MarkdownRemark`) {
     if (node.fileAbsolutePath.includes("/devtips/")) {
+      // create printer nodes only on MD nodes that are content pieces
+      // filePathSplit = node.fileAbsolutePath.split("/")
+      // fileName = filepathSplit[filePathSplit.lenght - 2]
+
       relativeFilePath = createFilePath({
         node,
         getNode,
@@ -17,6 +25,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         value: `/devtips${relativeFilePath}`,
       })
     } else if (node.fileAbsolutePath.includes("/notes/")) {
+      // create printer nodes only on MD nodes that are content pieces
       relativeFilePath = createFilePath({
         node,
         getNode,
