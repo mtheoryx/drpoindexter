@@ -3,7 +3,7 @@ module.exports = {
     title: `David Poindexter`,
     description: `Colloboration, inspiration, and innovation from AWS and Docker expert David Poindexter`,
     author: `@mtheoryx`,
-    siteUrl: `https://www.dpoindexter.com`,
+    siteUrl: `https://develop.dpoindexter.com/`,
     url: `https://www.dpoindexter.com`,
     twitterUserName: "@drpoindexter",
     image: "/drp-og-image.png",

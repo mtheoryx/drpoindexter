@@ -21,6 +21,7 @@ function SEO({ description, lang, meta, title, image }) {
             author
             image
             twitterUserName
+            siteUrl
           }
         }
       }
