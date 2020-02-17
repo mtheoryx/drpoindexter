@@ -8,10 +8,12 @@ const roundImageBase = ({ className, src, alt }) => (
 )
 
 export const RoundImage = styled(roundImageBase)`
+  background-color: #663399;
   border-radius: 50%;
   border: 2px solid #663399;
+  transition: border-width 0.25s ease;
   &:hover {
-    border: 5px solid #663399;
+    border-width: 5px;
   }
 `
 // Regular image

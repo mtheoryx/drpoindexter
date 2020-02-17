@@ -14,6 +14,9 @@ title: "Followup Friday Topics"
 
 I try to keep this up-to-date throughout the week.
 
+-[VS Code auto-dimming](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-dimmer)
+
+- [Harvest Forecasting](https://www.getharvest.com/forecast)
 - [Switching from Bash to Zsh](https://scriptingosx.com/2019/07/moving-to-zsh-part-4-aliases-and-functions/)
 - [Suz Hinton's Streaming Setup](https://medium.com/@suzhinton/my-twitch-live-coding-setup-b2516672fb21)
 - [Social Cards for website sharing](https://medium.com/@jonathanusa/how-to-make-sure-your-website-is-social-media-ready-and-why-it-matters-69e760e247b1)
