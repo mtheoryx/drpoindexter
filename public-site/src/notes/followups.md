@@ -14,8 +14,8 @@ title: "Followup Friday Topics"
 
 I try to keep this up-to-date throughout the week.
 
--[VS Code auto-dimming](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-dimmer)
-
+- [VS Code auto-dimming](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-dimmer)
+- [My possible PC build](https://pcpartpicker.com/list/Q2m26R)
 - [Harvest Forecasting](https://www.getharvest.com/forecast)
 - [Switching from Bash to Zsh](https://scriptingosx.com/2019/07/moving-to-zsh-part-4-aliases-and-functions/)
 - [Suz Hinton's Streaming Setup](https://medium.com/@suzhinton/my-twitch-live-coding-setup-b2516672fb21)
