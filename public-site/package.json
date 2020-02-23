@@ -4,7 +4,6 @@
   "description": "Personal website for David Poindexter",
   "version": "0.1.0",
   "author": "David Poindexter <drpoindexter@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -52,8 +51,7 @@
     "@storybook/addon-links": "^5.3.1",
     "@storybook/addons": "^5.3.1",
     "@storybook/react": "^5.3.1",
-    "babel-loader": "^8.0.6",
-    "gatsby-plugin-printer": "^1.1.0"
+    "babel-loader": "^8.0.6"
   },
   "keywords": [
     "gatsby"

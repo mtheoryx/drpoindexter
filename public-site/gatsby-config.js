@@ -20,7 +20,6 @@ module.exports = {
     ],
   },
   plugins: [
-    `gatsby-plugin-printer`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -76,7 +75,7 @@ module.exports = {
       options: {
         name: `notes`,
         path: `${__dirname}/src/notes/`,
-        ignore: [`**/\.*`],
+        ignore: process.env.NODE_ENV === `production` && [`**/draft-*`],
       },
     },
     `gatsby-transformer-sharp`,
