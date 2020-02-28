@@ -68,6 +68,7 @@ module.exports = {
       options: {
         name: `devtips`,
         path: `${__dirname}/src/devtips/`,
+        ignore: process.env.NODE_ENV === `production` && [`**/draft-*`],
       },
     },
     {

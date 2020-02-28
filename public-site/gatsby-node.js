@@ -24,7 +24,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         getNode,
         basePath: "notes/",
       })
-      // slug = createFilePath({ node, getNode })
       createNodeField({
         node,
         name: `slug`,
@@ -36,22 +35,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  // @TODO: Handle a few one-off redirects from early posting days
-  // This fails badly right now
-  // createRedirect({
-  //   fromPath: "/devtips/purge-node-modules-from-disks/",
-  //   toPath: "/notes/purge-node-modules-from-disks/",
-  //   // isPermanent: true,
-  //   redirectInBrowser: true,
-  //   force: true,
-  // })
-  // createRedirect({
-  //   fromPath: "/devtips/aws-cert/",
-  //   toPath: "/notes/aws-cert/",
-  //   // isPermanent: true,
-  //   redirectInBrowser: true,
-  //   force: true,
-  // })
+
   return graphql(`
     query {
       allMarkdownRemark {
@@ -81,8 +65,8 @@ exports.createPages = ({ graphql, actions }) => {
         })
       }
 
-      // Create the notes pages
       if (node.fileAbsolutePath && node.fileAbsolutePath.includes("/notes/")) {
+        // Create the notes pages
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/note.js`),

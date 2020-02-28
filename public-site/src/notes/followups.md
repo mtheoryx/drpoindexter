@@ -14,6 +14,11 @@ title: "Followup Friday Topics"
 
 I try to keep this up-to-date throughout the week.
 
+- [Adam13531's notes on learning development](http://share.adamlearns.live/learncoding.pdf)
+- [Create your own CRA Template](https://dev.to/pallymore/make-your-own-create-react-app-templates-feo)
+
+## For my own review
+
 - [VS Code auto-dimming](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-dimmer)
 - [My possible PC build](https://pcpartpicker.com/list/Q2m26R)
 - [Harvest Forecasting](https://www.getharvest.com/forecast)
