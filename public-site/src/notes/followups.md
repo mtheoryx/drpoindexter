@@ -14,6 +14,16 @@ title: "Followup Friday Topics"
 
 I try to keep this up-to-date throughout the week.
 
+### March 1, 2020
+
+- [Pocket](https://getpocket.com/add/?ep=1)
+- [ESP32 AWS](https://www.savjee.be/2019/07/connect-esp32-to-aws-iot-with-arduino-code/)
+- [Chris Biscardi Dynamo Course](https://egghead.io/lessons/aws-wtf-is-dynamodb)
+- [React Refs](https://nickymeuleman.netlify.com/blog/react-refs#referring-to-a-dom-element-inside-a-react-component)
+- [Kit Co, Product Lists for Streamers](https://kit.co/)
+
+### Feb 23, 2020
+
 - [Adam13531's notes on learning development](http://share.adamlearns.live/learncoding.pdf)
 - [Create your own CRA Template](https://dev.to/pallymore/make-your-own-create-react-app-templates-feo)
 
