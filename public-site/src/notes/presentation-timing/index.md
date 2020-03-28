@@ -12,9 +12,11 @@ I can then try rehearsing and notice when things are taking too long, or going t
 
 ## Make markers for elapsed time
 
-Speaking of timing, make sure you add some indicators in your speaker notes. I prever something like the following on the major slides.
+Speaking of timing, make sure you add some indicators in your speaker notes. I prefer something like the following on the major slides.
 
 ![Timing Marks In Speaker Notes](speaker-note-timing.png)
+
+The right-aligned, bright red on dark background stands out enough for me to do a gut-check on where I am in my timing for the talk.
 
 ## Show the elapsted time and speaker notes
 
