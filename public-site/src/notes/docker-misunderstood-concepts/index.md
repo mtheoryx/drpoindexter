@@ -6,7 +6,9 @@ Over the past months, I'm noticing some understandable confusion around some of 
 
 - Build time vs Run time concerns
 - Images vs Containers
+- Layers, cache, and optimization (and when you should even care)
 - Containers vs Services
+- Networks, ports, compose, and "localhost"
 - Volume Mounts (and the different types)
 - Container reuse patterns
 - Sidecar container patterns
