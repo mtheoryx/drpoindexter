@@ -19,7 +19,7 @@ Of course I try to assist others as much as possible. There is even this running
 That said, jumping right in the middle of something, and via chat only, leads to more confusion and frustration. Here are a few reasons why:
 
 1. Chat is async, one-way, and has a delay. The delay is both technological (speed of light) and human (how often the streamer/poster is looking at when you are sharing).
-1. Instead of wholistically being able to teach a concept, you are treating immediat "stuffs on fire, and I'm getting frustrated" symptoms.
+1. Instead of holistically being able to teach a concept, you are treating immediate "stuffs on fire, and I'm getting frustrated" symptoms.
 
 I plan to start tackling a few of these confusions. Primarily because I want people to get "help" when I'm not available, and also because you can get yourself in to serious issues and end up hating Docker, Containers, and all this, and go back to running a steady-state, stateful solution that needs previous gen attention and grooming forever.
 
@@ -30,5 +30,5 @@ Here is what I'm thinking in terms of a plan of approach:
 1. Stream the education live on [my Twitch stream](https://www.twitch.tv/roberttables), and archive the VODs for future use.
 1. Ensure discovery and quick sharing when someone needs help.
 1. Formalise the content into more of a structured, logical progression curriculum.
-1. Solicity feedback from of others and curate examples
+1. Solicit feedback from of others and curate examples
 1. Sell all of it <3
