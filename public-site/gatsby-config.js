@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `David Poindexter`,
     description: `Collaboration, inspiration, and innovation from AWS and Docker expert David Poindexter`,
-    author: `@mtheoryx`,
+    author: `David Poindexter`,
     siteUrl: `https://www.dpoindexter.com`,
     url: `https://www.dpoindexter.com`,
     twitterUserName: "@drpoindexter",
