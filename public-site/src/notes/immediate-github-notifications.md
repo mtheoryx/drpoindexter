@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Quick Thinking with a Twilio Integration"
 ---
 
 I was presented with a simple ask:
