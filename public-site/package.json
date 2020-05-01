@@ -11,7 +11,13 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "alex": "alex"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run alex"
+    }
   },
   "dependencies": {
     "aws-amplify": "^2.2.0",
@@ -51,7 +57,9 @@
     "@storybook/addon-links": "^5.3.1",
     "@storybook/addons": "^5.3.1",
     "@storybook/react": "^5.3.1",
-    "babel-loader": "^8.0.6"
+    "alex": "^8.1.1",
+    "babel-loader": "^8.0.6",
+    "husky": "^4.2.5"
   },
   "keywords": [
     "gatsby"
