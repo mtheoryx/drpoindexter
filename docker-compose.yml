@@ -8,7 +8,7 @@ services:
     image: dpoindexter-site
     container_name: dpoindexter-site
     init: true
-    command: npm run develop -- -H 0.0.0.0
+    command: yarn develop -- -H 0.0.0.0
     ports:
       - 8000:8000
       - 9000:9000

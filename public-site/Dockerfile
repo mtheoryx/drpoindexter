@@ -1,16 +1,16 @@
 #
 # Create the installation layer
-FROM node:12.7.0-alpine as install
+FROM node:13.10.1 as install
 
 WORKDIR /usr/app
 
 # Install Dependencies
-COPY ./package.json ./package-lock.json ./
-RUN npm i --silent
+COPY ./package.json ./yarn.lock ./
+RUN yarn install
 
 #
 # Create the application development layer
-FROM node:12.7.0-alpine as develop
+FROM node:13.10.1 as develop
 
 # Expose Ports
 EXPOSE 8000
@@ -30,16 +30,16 @@ COPY . .
 #
 # @TODO: Create the production build layer
 # This should only result in production npm deps installed
-FROM node:12.7.0-alpine as production
+FROM node:13.10.1 as production
 
 WORKDIR /usr/app
 # Install prod deps
 COPY ./package.json ./package-lock.json ./
-RUN npm i --production --silent
+RUN yarn install
 # Copy code from... somewhere
 COPY . .
 # Run a gatsby build production
-RUN npm run build
+RUN yarn build
 # Should just be static files (HTML, JS, CSS, Media assets)
 # For later copying
 
