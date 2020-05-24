@@ -14,12 +14,15 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.4",
+    "@mdx-js/react": "^1.6.4",
     "aws-amplify": "^2.3.0",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.13.73",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-humans-txt": "^1.1.4",
     "gatsby-plugin-manifest": "^2.2.6",
+    "gatsby-plugin-mdx": "^1.2.12",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-react-helmet": "^3.1.4",
     "gatsby-plugin-robots-txt": "^1.5.0",
