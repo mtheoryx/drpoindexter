@@ -8,23 +8,23 @@ services:
     image: dpoindexter-site
     container_name: dpoindexter-site
     init: true
-    command: npm run develop -- -H 0.0.0.0
+    command: yarn develop -- -H 0.0.0.0
     ports:
       - 8000:8000
       - 9000:9000
     volumes:
       - /usr/app/node_modules
       - ./public-site:/usr/app
-  dpoindexter-storybook:
-    build:
-      context: ./public-site
-      target: develop
-    image: dpoindexter-storybook
-    container_name: dpoindexter-storybook
-    init: true
-    command: npm run storybook
-    ports:
-      - 6006:6006
-    volumes:
-      - /usr/app/node_modules
-      - ./public-site:/usr/app
+  # dpoindexter-storybook:
+  #   build:
+  #     context: ./public-site
+  #     target: develop
+  #   image: dpoindexter-storybook
+  #   container_name: dpoindexter-storybook
+  #   init: true
+  #   command: npm run storybook
+  #   ports:
+  #     - 6006:6006
+  #   volumes:
+  #     - /usr/app/node_modules
+  #     - ./public-site:/usr/app
