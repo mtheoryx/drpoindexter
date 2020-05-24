@@ -20,7 +20,7 @@ const DevtipsIndexPage = ({ data }) => (
     <h2>Developer Tips and Tricks</h2>
 
     <ul style={{ listStyle: "none" }}>
-      {data.Devtips.edges.map(({ node }) => (
+      {data.Devtips.nodes.map((node) => (
         <li
           key={node.id}
           style={{
@@ -44,21 +44,19 @@ export default DevtipsIndexPage
 
 export const pageQuery = graphql`
   query {
-    Devtips: allMarkdownRemark(
+    Devtips: allMdx(
       filter: { fileAbsolutePath: { regex: "/devtips/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date
-            description
-          }
-          fields {
-            slug
-          }
+      nodes {
+        id
+        frontmatter {
+          title
+          date
+          description
+        }
+        fields {
+          slug
         }
       }
     }

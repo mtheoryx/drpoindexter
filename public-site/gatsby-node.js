@@ -6,7 +6,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
   let fileName
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     if (node.fileAbsolutePath.includes("/devtips/")) {
       // create printer nodes only on MD nodes that are content pieces
       // filePathSplit = node.fileAbsolutePath.split("/")
@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     query {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
             fileAbsolutePath
@@ -55,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then((result) => {
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMdx.edges.forEach(({ node }) => {
       // Create the devtips pages
       if (
         node.fileAbsolutePath &&
