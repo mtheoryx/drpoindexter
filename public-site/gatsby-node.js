@@ -4,11 +4,6 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-<<<<<<< HEAD
-  // let relativePath
-  // let filePathSplit
-=======
->>>>>>> master
   let fileName
 
   if (node.internal.type === `MarkdownRemark`) {
@@ -59,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       // Create the devtips pages
       if (
