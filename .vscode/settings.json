@@ -6,7 +6,7 @@
     "titleBar.activeForeground": "#000",
     "titleBar.inactiveForeground": "#000000CC",
     "titleBar.activeBackground": "#663399",
-    "titleBar.inactiveBackground": "#663399"
+    "titleBar.inactiveBackground": "#897a98"
   },
   "git.ignoreLimitWarning": true
 }
