@@ -61,11 +61,66 @@ _Mental Notes and Left Todos:_
 
 ### Configure Cmder for VS Code integration
 
+In VS Code under Settings > Features > Terminal looks for the preference `Terminal > External: Windows Exec` and change this to the Windows path to Cmdr.exe on your system. For example:
+
+`C:\Users\David.Poindexter\cmder_mini\Cmdr.exe`
+
 ## Update ubuntu
+
+[Source Article](https://www.cyberciti.biz/faq/how-do-i-update-ubuntu-linux-softwares/)
+
+For updating, you can use either `apt-get or` `apt`. I went with `apt`.
+
+The following will update apt itself:
+
+```bash
+sudo apt update
+```
+
+The following will apply updates and patches on Ubuntu:
+
+```bash
+sudo apt upgrade
+```
 
 ## Install NVM
 
+The scale of this new project, and related services required for integration means I need several versions of node installed. For managing those installations, I've been using a tool called Node Version Manager (nvm) for a few years.
+
+To install this on Ubuntu, I followed the instructions in the nvm repository on github:
+
+[nvm-sh](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+The command I used was the following
+
+```bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+
+To verify that it was installed correctly, you should see some feedback after running the following:
+
+```bash
+command -v nvm
+-> nvm
+```
+
 ## Install a Node version
+
+After asking around on the team, we came up with a list of target node versions: 10, 12, and latest (14 currently). To install these, I ran the following:
+
+```bash
+nvm install 10
+nvm install 12
+nvm install 14
+```
+
+To verify these are installed, list the locally installed versions of node with the following:
+
+```bash
+nvm list
+```
+
+This should list out any of the versions that shipped with Ubuntu, and specicifically these 3 versions we just installed.
 
 ## Directory locations in wsl1
 
@@ -78,6 +133,8 @@ They are not meant for us to mess with from windows. They are in a hidden folder
 
 https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops
 
+`ssh-keygen -C "you@email.com"`
+
 ## Connect a git ssh key in Asure DevOps
 
 Go to your profile dropdown
@@ -86,6 +143,32 @@ New key button
 Give it a name
 Paste in the public key data
 
-@TODO: How to copy to clipboard with ubuntu?
+~~@TODO~~Done: How to copy to clipboard with ubuntu?
 
 [Here is a builtin way that appeared to work!](https://www.raymondcamden.com/2017/10/19/copying-to-clipboard-with-windows-subsystem-for-linux)
+
+And with Remote Desktop I now also have that on my mac clipboard, ready to paste! Neat!
+
+Then verify that it has been configured correctly:
+
+```bash
+ssh -T git@ssh.dev.azure.com
+-> remote: Shell access is not supported.
+```
+
+## Install a boat load of VS Code Extensions
+
+- CoenraadS.bracket-pair-colorizer
+- formulahendry.auto-rename-tag
+- johnpapa.Angular2
+- johnpapa.vscode-peacock
+- johnpapa.winteriscoming
+- mikestead.dotenv
+- ms-vscode-remote.remote-containers
+- ms-vscode-remote.remote-ssh
+- ms-vscode-remote.remote-ssh-edit
+- ms-vscode-remote.remote-wsl
+- ms-vscode-remote.vscode-remote-extensionpack
+- msjsdiag.debugger-for-chrome
+- msjsdiag.debugger-for-edge
+- PKief.material-icon-theme
