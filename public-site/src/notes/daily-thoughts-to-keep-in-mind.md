@@ -15,7 +15,7 @@ You don't know what you don't know. And what you don't know can be some really t
 
 ## Everyone has a bad day
 
-Related to the above, don't "give a pass" to obvious transgressions, but people make mistakes. Give space for learning, growth, apollogy, and reflection.
+Related to the above, don't "give a pass" to obvious transgressions, but people make mistakes. Give space for learning, growth, apology, and reflection.
 
 ## You are not your social media
 
