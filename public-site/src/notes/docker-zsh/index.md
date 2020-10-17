@@ -102,14 +102,44 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 Ah-ha! Look at the status. Now the status is `Exited (0)` which illustrates that the start worked, and the container exited successfully with an exit code of zero.
 
-Well this is all fun and whatnot, but we really want to have this thing running, and be able to do some experiments inside of it. Like, installing and testing software.
+Well this is all fun and whatnot, but we really want to have a container running interactively, and be able to do some experiments inside of it. Like, installing and testing software. The command we want to run is just the bash shell itself. Here's what this will look like:
+
+```sh
+docker run -it ubuntu:20.04 /bin/bash
+```
+
+```sh
+root@406b61332161:/#
+```
+
+Your terminal prompt will now be within the running ubuntu container, in the bash shell, as the root user. Feel free to browse around, install software, test things out. When you exit the container, all changes are lost and you will be back to square one with a fresh container the next time you execute this command. More on change persistance soon.
 
 ### Install zsh
 
+_(@TODO)_
+
+This is where we update software, install zsh, and get a chance to toy with our options.
+
 ### Record the configuration
+
+_(@TODO)_
+
+Every time we exit our container, everything we did above gets lost, and we have to re-do it every time. Let's record some of these basics in a custom Dockerfile that extends the base image.
 
 ### Save container state
 
+_(@TODO)_
+
+Now that we have a reproducable environment, we want to start introducing some tests of various bash customizations to test out in this container. We can persist data into and out of the container with Volumes.
+
 ### Validate existing bash stuff in zsh
 
+_(@TODO)_
+
+Now we should have some basic needs met in a zsh compatible way that is being saved in our container, that we can commit and push up to github. When we update our OS, and use zsh as a default, we can easily clone this repo and have all those tested configurations immediatly available in our new, happy zsh home.
+
 ### Remediate any defects found back into my repo
+
+_(@TODO)_
+
+Depending on the changes required, we might backport those changes in a bash-compatible way. I will still have some other machines still on the older os, and still needing to use bash.
