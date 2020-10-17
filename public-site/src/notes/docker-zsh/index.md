@@ -30,13 +30,13 @@ First, head over to [Docker Hub](https://hub.docker.com/_/ubuntu) and search for
 
 To get this image locally, fire up a terminal and run this:
 
-```sh
+```bash
 docker pull ubuntu:20.04
 ```
 
 Keep an eye on that output. You will see something like this:
 
-```sh
+```bash
 20.04: Pulling from library/ubuntu
 d72e567cc804: Pull complete
 0f3630e5ff08: Pull complete
@@ -50,11 +50,11 @@ Where you see the lines that start with a hash, then pull complete. Those are ca
 
 Verify that you have it available locally with (hecc, you may already have it):
 
-```sh
+```bash
 docker image ls | grep ubuntu
 ```
 
-```sh
+```bash
 ubuntu  20.04  9140108b62dc  3 weeks ago  72.9MB
 ```
 
@@ -64,17 +64,17 @@ You can create a container, you can run a container. You can create and run a co
 
 Create a container from an image:
 
-```sh
+```bash
 docker container create ubuntu:20.04
 ```
 
 This will spit out a long hash, and you can see the container created, but not running with:
 
-```sh
+```bash
 docker container ls -a
 ```
 
-```sh
+```bash
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 0f176a00b28a        ubuntu:20.04        "/bin/bash"         8 seconds ago       Created                                 elastic_ellis
 
@@ -82,7 +82,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 Now let's start that specific container. The name has been automatically created, but it's much easier than typing in the container ID.
 
-```sh
+```bash
 docker start elastic_ellis
 ```
 
@@ -90,11 +90,11 @@ Wait, what happened? Well it did start the container, but there isn't any define
 
 Let's verify that assumption:
 
-```sh
+```bash
 docker container ls -a
 ```
 
-```sh
+```bash
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
 0f176a00b28a        ubuntu:20.04        "/bin/bash"         17 minutes ago      Exited (0) 7 minutes ago                       elastic_ellis
 
@@ -104,11 +104,11 @@ Ah-ha! Look at the status. Now the status is `Exited (0)` which illustrates that
 
 Well this is all fun and whatnot, but we really want to have a container running interactively, and be able to do some experiments inside of it. Like, installing and testing software. The command we want to run is just the bash shell itself. Here's what this will look like:
 
-```sh
+```bash
 docker run -it ubuntu:20.04 /bin/bash
 ```
 
-```sh
+```bash
 root@406b61332161:/#
 ```
 
@@ -116,11 +116,101 @@ Your terminal prompt will now be within the running ubuntu container, in the bas
 
 ### Install zsh
 
-_(@TODO)_
+Well, we aren't _just_ going to install zsh. I want to try some other extras too. However, baby steps, one foot in front of the other.
 
-This is where we update software, install zsh, and get a chance to toy with our options.
+First we have to update stuff in ubuntu. Here's some stuff to run:
 
-### Record the configuration
+```bash
+apt update && apt upgrade -y
+```
+
+**Note**: Normally you would run this with `sudo`, but we are already in this container as root, so it's not needed.
+
+Although zsh is available officially in the default Ubuntu 20.04 default repos, we will want to install oh-my-zsh later, so we'll go ahead and install that now.
+
+```bash
+apt install -y zsh
+```
+
+We can then verify that it's installed by listing the version:
+
+```bash
+zsh --version
+zsh 5.8 (x86_64-ubuntu-linux-gnu)
+```
+
+List your current shell:
+
+```bash
+ps -p $$
+PID TTY          TIME CMD
+  1 pts/0    00:00:00 bash
+```
+
+List all available shells:
+
+```bash
+cat /etc/shells
+/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+/bin/zsh
+/usr/bin/zsh
+```
+
+Now we need to change our default shell, log out and then log back in. But remember, this is a container. When we exit the container, everything we did above is going to be lost. Now we need to start persisting some of these changes in a custom docker image. Let's start doing that next
+
+### Start Recording the Basic Configuration
+
+For this part, we will essencially walk throught he above steps, but this time record those lines in a file. So next time we "restart" our container, those things we know must happen, and we know they work, will be automatic. So create a docker file. The file name is just `Dockerfile`. No extention, and spelled just like that.
+
+```bash
+cd some-project && touch Dockerfile
+```
+
+I'll be using vim for this, but feel free to open any text editor or IDE you prefer.
+
+Similarly to before steps, we need a base image to pull from.
+
+```Dockerfile
+FROM ubuntu:20.04
+```
+
+Then we need to do updates to the OS itself
+
+```Dockerfile
+FROM ubuntu:20.04
+
+RUN apt update && apt upgrade -y
+```
+
+How do we build this image? Previously we pulled an already made image from Docker Hub. But now, we need to build our own image, and then run a container from that custom image. Let's try it out.
+
+```bash
+docker build -t give-it-an-image-name .
+```
+
+Wait, the hecc is this?
+
+```bash
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+```
+
+Uh oh, what is that warning? [Well this looks like we should be using apt-get](https://askubuntu.com/questions/990823/apt-gives-unstable-cli-interface-warning) because apt itself shows progress bars and such that aren't "good" for scripts? We can change that.
+
+```Dockerfile
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get upgrade -y
+```
+
+```bash
+docker build -t give-it-an-image-name .
+```
 
 _(@TODO)_
 
