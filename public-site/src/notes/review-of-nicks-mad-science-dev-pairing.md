@@ -1,10 +1,10 @@
 ---
-title: "Twilio Signal Twich 2020: Nick Piegari, Dev Efforts, and a Review"
+title: "Twilio Signal Twitch 2020: Nick Piegari, Dev Efforts, and a Review"
 ---
 
 ## The Problem Statement
 
-In 2019, the Twilio Signal Twitch production entered another iteraiton. This was highly polished, had dedicated producers, and digital assets. One of these assets is the schedule.
+In 2019, the Twilio Signal Twitch production entered another iteration. This was highly polished, had dedicated producers, and digital assets. One of these assets is the schedule.
 
 Previously, the schedule was a static image, included via an OBS overlay. The only issue is that if anything with the schedule started to deviate, the whole image needed changed, exported and saved, re-uploaded, browser sources updated, and OBS source refreshed.
 
@@ -16,7 +16,7 @@ Now we have a challenge. But it was unclear if anyone would pick up that gauntle
 
 A friend of mine, Nick Piegari, and I are mutuals in a few communities. One of those is Twitch Science & Technology, and another is a Discord server full of creatives, technologists, and other lovely interests.
 
-Nick contacted me and Brent Schooley about possibly getting this project off the ground. Working together we did a divide adn conquer project planning, infrastructure isolation, and assignment of roles.
+Nick contacted me and Brent Schooley about possibly getting this project off the ground. Working together we did a divide and conquer project planning, infrastructure isolation, and assignment of roles.
 
 Nick chose to own the UI aspect of the solution, even before really knowing the challenge facing him. To that, I simply raise a glass and commend the courage, optimism, and ambition.
 
@@ -32,6 +32,6 @@ Despite the presumption that Nick Piegari is just starting to become a developer
 
 Nick was responsive to requests, always enthusiastic to jump in and get to work, and communicated clearly expectations for when they may not be as responsive.
 
-What I appreciate about working with Nick is the way they were curious about why certain choices were being made. When asking questions, it was framed quite reasonably form a point of not quite understaning, instead of a fake kind of questioning where you have another "way" you are trying to promote.
+What I appreciate about working with Nick is the way they were curious about why certain choices were being made. When asking questions, it was framed quite reasonably form a point of not quite understanding, instead of a fake kind of questioning where you have another "way" you are trying to promote.
 
-I would love to work with Nick again on a future project, and I suspect what we built together will end up evolving into somehting more flexible that can serve many more purposes. He also has a fantastic stream on Twitch. Come say hi, sometime.
+I would love to work with Nick again on a future project, and I suspect what we built together will end up evolving into something more flexible that can serve many more purposes. He also has a fantastic stream on Twitch. Come say hi, sometime.
