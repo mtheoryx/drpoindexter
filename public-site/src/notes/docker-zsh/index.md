@@ -166,7 +166,9 @@ Now we need to change our default shell, log out and then log back in. But remem
 
 ### Start Recording the Basic Configuration
 
-For this part, we will essencially walk throught he above steps, but this time record those lines in a file. So next time we "restart" our container, those things we know must happen, and we know they work, will be automatic. So create a docker file. The file name is just `Dockerfile`. No extention, and spelled just like that.
+Every time we exit our container, everything we did above gets lost, and we have to re-do it every time. Let's record some of these basics in a custom Dockerfile that extends the base image.
+
+For this part, we will essencially walk throught he above steps, but this time record those lines in a file. So next time we "restart" our container, those things we know must happen, and we know they work, will be automatic. So create a docker file. The file name is just `Dockerfile`. No file extention, and spelled just like that.
 
 ```bash
 cd some-project && touch Dockerfile
@@ -212,9 +214,70 @@ RUN apt-get update && apt-get upgrade -y
 docker build -t give-it-an-image-name .
 ```
 
-_(@TODO)_
+Giving this image a name with the `-t give-it-an-image-name` argument will make it easier for our later commands, and gives it an implicit image tag of `latest`. For anything other than local tests like these, don't rely on the `latest` tag with anything in docker.
 
-Every time we exit our container, everything we did above gets lost, and we have to re-do it every time. Let's record some of these basics in a custom Dockerfile that extends the base image.
+**Note**: That final `.` at the end of the command designates the current working directory as the target to locate a Dockerfile, which we have created.
+
+Now let's install zsh, in our Dockerfile, and then run our new container to make sure we have what we think we have.
+
+```Dockerfile
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y zsh
+```
+
+```bash
+docker build -t zsh-custom .
+```
+
+```bash
+docker run -it zsh-custom /bin/bash
+```
+
+```bash
+root@a2a89385ade1:/# which zsh
+/usr/bin/zsh
+root@a2a89385ade1:/# zsh --version
+zsh 5.8 (x86_64-ubuntu-linux-gnu)
+```
+
+Fantastic. Now let's refine our operation to do 2 more things:
+
+1. Make sure the shell is permanently changed in the Dockerfile
+2. Now let's "shell into" the new container with zsh.
+
+```Dockerfile
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y zsh
+
+RUN usermod -s $(which zsh) root
+```
+
+And now we use zsh as our default entry command:
+
+```bash
+docker run -it zsh-custom /bin/zsh
+```
+
+Double check a few things in the container:
+
+```bash
+c4e82a8aa39e# whoami
+root
+c4e82a8aa39e# zsh --version
+zsh 5.8 (x86_64-ubuntu-linux-gnu)
+c4e82a8aa39e# ps -p $$
+  PID TTY          TIME CMD
+    1 pts/0    00:00:00 zsh
+c4e82a8aa39e#
+```
+
+Now we have an image with the very basics, and it's a little easier to fire up. And checked into code, if we want. Now we probably want a little bit more.
 
 ### Save container state
 
