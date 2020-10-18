@@ -1,10 +1,10 @@
 ---
-title: "Twilio Signal Twitch 2020: Nick Piegari, Dev Efforts, and a Review"
+title: "Twilio SIGNAL Twitch 2020: Nick Piegari, Dev Efforts, and a Review"
 ---
 
 ## The Problem Statement
 
-In 2019, the Twilio Signal Twitch production entered another iteration. This was highly polished, had dedicated producers, and digital assets. One of these assets is the schedule.
+In 2019, the Twilio SIGNAL Twitch production entered another iteration. This was highly polished, had dedicated producers, and digital assets. One of these assets is the schedule.
 
 Previously, the schedule was a static image, included via an OBS overlay. The only issue is that if anything with the schedule started to deviate, the whole image needed changed, exported and saved, re-uploaded, browser sources updated, and OBS source refreshed.
 
@@ -22,7 +22,7 @@ Nick chose to own the UI aspect of the solution, even before really knowing the 
 
 ## The Results
 
-The result was a full suite of UI components that were imported as OBS Browser Overlay sources that matched the styles, the look and feel, and even the pixel-perfect requirements form the Twilio Signal production team. A job well done.
+The result was a full suite of UI components that were imported as OBS Browser Overlay sources that matched the styles, the look and feel, and even the pixel-perfect requirements form the Twilio SIGNAL production team. A job well done.
 
 Git contributions were smooth, and deployments to production had no hiccups at all. This is due to quick responses, peer reviews, and a smooth and steady effort even during time-sensitive requests.
 
