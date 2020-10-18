@@ -112,7 +112,7 @@ docker run -it ubuntu:20.04 /bin/bash
 root@406b61332161:/#
 ```
 
-Your terminal prompt will now be within the running ubuntu container, in the bash shell, as the root user. Feel free to browse around, install software, test things out. When you exit the container, all changes are lost and you will be back to square one with a fresh container the next time you execute this command. More on change persistance soon.
+Your terminal prompt will now be within the running ubuntu container, in the bash shell, as the root user. Feel free to browse around, install software, test things out. When you exit the container, all changes are lost and you will be back to square one with a fresh container the next time you execute this command. More on change persistence soon.
 
 ### Install zsh
 
@@ -168,7 +168,7 @@ Now we need to change our default shell, log out and then log back in. But remem
 
 Every time we exit our container, everything we did above gets lost, and we have to re-do it every time. Let's record some of these basics in a custom Dockerfile that extends the base image.
 
-For this part, we will essencially walk throught he above steps, but this time record those lines in a file. So next time we "restart" our container, those things we know must happen, and we know they work, will be automatic. So create a docker file. The file name is just `Dockerfile`. No file extention, and spelled just like that.
+For this part, we will essentially walk through he above steps, but this time record those lines in a file. So next time we "restart" our container, those things we know must happen, and we know they work, will be automatic. So create a docker file. The file name is just `Dockerfile`. No file extension, and spelled just like that.
 
 ```bash
 cd some-project && touch Dockerfile
@@ -283,16 +283,16 @@ Now we have an image with the very basics, and it's a little easier to fire up. 
 
 _(@TODO)_
 
-Now that we have a reproducable environment, we want to start introducing some tests of various bash customizations to test out in this container. We can persist data into and out of the container with Volumes.
+Now that we have a reproducible environment, we want to start introducing some tests of various bash customizations to test out in this container. We can persist data into and out of the container with Volumes.
 
 ### Validate existing bash stuff in zsh
 
 _(@TODO)_
 
-Now we should have some basic needs met in a zsh compatible way that is being saved in our container, that we can commit and push up to github. When we update our OS, and use zsh as a default, we can easily clone this repo and have all those tested configurations immediatly available in our new, happy zsh home.
+Now we should have some basic needs met in a zsh compatible way that is being saved in our container, that we can commit and push up to Github. When we update our OS, and use zsh as a default, we can easily clone this repo and have all those tested configurations immediately available in our new, happy zsh home.
 
 ### Remediate any defects found back into my repo
 
 _(@TODO)_
 
-Depending on the changes required, we might backport those changes in a bash-compatible way. I will still have some other machines still on the older os, and still needing to use bash.
+Depending on the changes required, we might back-port those changes in a bash-compatible way. I will still have some other machines still on the older os, and still needing to use bash.

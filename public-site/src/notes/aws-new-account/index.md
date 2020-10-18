@@ -15,9 +15,9 @@ title: "Essential first steps for a new AWS account"
 - Configure cross account roles for cli access
 - Configure local cross account access
 - Configure Chrome account switching cross-account access
-- Configure cloudtrail, logs, and retention
+- Configure CloudTrail, logs, and retention
 - Disable regions
-- Enable aws config and basic rules pack
+- Enable AWS Config and basic rules pack
 
 ## The Billing
 
