@@ -6,6 +6,8 @@ I'm going to iterate on a simple idea: I want to test out zsh in a docker contai
 
 This is the start of a series of notes. I'll be listing links to the other pages at the top as these notes grow too large for one note.
 
+[Source Tutorial I started with](https://kifarunix.com/install-and-setup-zsh-and-oh-my-zsh-on-ubuntu-20-04/)
+
 ## Why would I want to do this
 
 Well, I'm really behind on a mac os upgrade. There is software I can't use (karabiner, for example) because of this. I normally wait about one version, out of an abundance of caution. But I wanted longer than that for one big reason: zsh is now the default shell. I use bash, and more importantly, old bash that came pre-installed on mac.
@@ -258,7 +260,7 @@ RUN apt-get install -y zsh
 RUN usermod -s $(which zsh) root
 ```
 
-And now we use zsh as our default entry command:
+And now we use zsh as our command:
 
 ```bash
 docker run -it zsh-custom /bin/zsh
@@ -277,7 +279,38 @@ c4e82a8aa39e# ps -p $$
 c4e82a8aa39e#
 ```
 
-Now we have an image with the very basics, and it's a little easier to fire up. And checked into code, if we want. Now we probably want a little bit more.
+Now we have an image with the very basics, and it's a little easier to fire up. And checked into code, if we want. Now we probably want a little bit more, like [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki).
+
+There are 2 more commands we will need to install this, per instructions:
+
+- git
+- curl (or wget, pick your flavor)
+
+We can add these to the `RUN` line where we are already installing zsh:
+
+```Dockerfile
+RUN apt-get install -y zsh curl git
+```
+
+Then, before we elect our default shell, we will insert the call to install oh-my-zsh.
+
+It's really important to make sure that things we install have a non-interactive mode. Which means they don't wait for input to progress through installation steps. Lucky for us, oh-my-zsh had one with the option `--unattended`
+
+The Dockerfile should now look similar to this:
+
+```Dockerfile
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install -y zsh curl git
+
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+RUN usermod -s $(which zsh) $(whoami)
+
+WORKDIR /root
+```
 
 ### Save container state
 
