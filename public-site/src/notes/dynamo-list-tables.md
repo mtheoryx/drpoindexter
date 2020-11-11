@@ -17,26 +17,26 @@ Here is the output (specific tablenames are redacted, but you can see the format
 ```bash
 {
     "TableNames": [
-        "AFC_BRANCH_AUCTION_ADR_INFO",
-        "ApplicationManifest",
-        "Approval",
-        "Branch",
-        "Counters",
-        "Document",
-        "FP_LEGAL_ENTITIES",
-        "GateWayDemo",
-        "Report",
-        "Test",
-        "Test_New",
-        "TitleStatusApiKeyNameOrgIdMapTable",
-        "UserAuth",
-        "UserAuthMigration",
-        "Verification",
-        "WorkitemLeadTimeToChange",
-        "afc-reference",
-        "authjson",
-        "awsdms_full_load_exceptions",
-        "test-bb"
+      "Table1",
+      "Table2",
+      "Table3",
+      "Table4",
+      "Table5",
+      "Table6",
+      "Table7",
+      "Table8",
+      "Table9",
+      "Table10",
+      "Table11",
+      "Table12",
+      "Table13",
+      "Table14",
+      "Table15",
+      "Table16",
+      "Table17",
+      "Table18",
+      "Table19",
+      "Table20"
     ]
 }
 ```
@@ -55,26 +55,26 @@ This now gives us just the array:
 
 ```bash
 [
-  "AFC_BRANCH_AUCTION_ADR_INFO",
-  "ApplicationManifest",
-  "Approval",
-  "Branch",
-  "Counters",
-  "Document",
-  "FP_LEGAL_ENTITIES",
-  "GateWayDemo",
-  "Report",
-  "Test",
-  "Test_New",
-  "TitleStatusApiKeyNameOrgIdMapTable",
-  "UserAuth",
-  "UserAuthMigration",
-  "Verification",
-  "WorkitemLeadTimeToChange",
-  "afc-reference",
-  "authjson",
-  "awsdms_full_load_exceptions",
-  "test-bb"
+  "Table1",
+  "Table2",
+  "Table3",
+  "Table4",
+  "Table5",
+  "Table6",
+  "Table7",
+  "Table8",
+  "Table9",
+  "Table10",
+  "Table11",
+  "Table12",
+  "Table13",
+  "Table14",
+  "Table15",
+  "Table16",
+  "Table17",
+  "Table18",
+  "Table19",
+  "Table20"
 ]
 ```
 
@@ -85,24 +85,24 @@ aws dynamodb list-tables | jq '.TableNames[]'
 ```
 
 ```bash
-"AFC_BRANCH_AUCTION_ADR_INFO"
-"ApplicationManifest"
-"Approval"
-"Branch"
-"Counters"
-"Document"
-"FP_LEGAL_ENTITIES"
-"GateWayDemo"
-"Report"
-"Test"
-"Test_New"
-"TitleStatusApiKeyNameOrgIdMapTable"
-"UserAuth"
-"UserAuthMigration"
-"Verification"
-"WorkitemLeadTimeToChange"
-"afc-reference"
-"authjson"
-"awsdms_full_load_exceptions"
-"test-bb"
+"Table1"
+"Table2"
+"Table3"
+"Table4"
+"Table5"
+"Table6"
+"Table7"
+"Table8"
+"Table9"
+"Table10"
+"Table11"
+"Table12"
+"Table13"
+"Table14"
+"Table15"
+"Table16"
+"Table17"
+"Table18"
+"Table19"
+"Table20"
 ```
