@@ -14,13 +14,11 @@ But what if you are parsing structured data in yaml? From something like a serve
 
 ## Our example serverless yaml file
 
-[Here we will use an example yaml file straight from the serverless site](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/)
+[Lets start with what we want to do. Let's start with a quickstart from serverless for defining a function to forward calls with Twilio.](https://www.serverless.com/examples/twilio-node-forward-call/)
 
 To keep this brief, the full file is displayed way below.
 
 ### Problem statement
-
-[Lets start with what we want to do. Let's start with a quickstart from serverless for defining a function to forward calls with Twilio.](https://www.serverless.com/examples/twilio-node-forward-call/)
 
 Out of this file, I would like to list out the actual handler functions for the service, so I can make a checklist of files to go add enhanced telemetry, tracing, error handling, and logging.
 
