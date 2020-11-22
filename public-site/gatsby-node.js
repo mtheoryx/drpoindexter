@@ -1,4 +1,5 @@
 const path = require("path")
+const fs = require("fs")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -46,6 +47,9 @@ exports.createPages = ({ graphql, actions }) => {
       allMdx {
         edges {
           node {
+            frontmatter {
+              title
+            }
             fileAbsolutePath
             fields {
               slug
@@ -81,5 +85,22 @@ exports.createPages = ({ graphql, actions }) => {
         })
       }
     })
+
+    // Create json file for alfred searching
+    if (!fs.existsSync(path.join(__dirname, "public"))) {
+      fs.mkdirSync(path.join(__dirname, "public"))
+    }
+    fs.writeFileSync(
+      path.join(__dirname, "public", "posts.json"),
+      JSON.stringify({
+        items: result.data.allMdx.edges.map(({ node }) => {
+          return {
+            title: node.frontmatter.title,
+            subtitle: `https://www.dpoindexter.com${node.fields.slug}`,
+            arg: `https://www.dpoindexter.com${node.fields.slug}`,
+          }
+        }),
+      })
+    )
   })
 }
