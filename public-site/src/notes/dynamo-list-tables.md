@@ -12,7 +12,7 @@ For my purposes, I got all 20 back. Here's how I ran it:
 aws dynamodb list-tables
 ```
 
-Here is the output (specific tablenames are redacted, but you can see the format):
+Here is the output (specific table names are redacted, but you can see the format):
 
 ```bash
 {

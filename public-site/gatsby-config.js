@@ -69,7 +69,6 @@ module.exports = {
       options: {
         name: `devtips`,
         path: `${__dirname}/src/devtips/`,
-        ignore: process.env.NODE_ENV === `production` && [`**/draft-*`],
       },
     },
     {
@@ -77,7 +76,6 @@ module.exports = {
       options: {
         name: `notes`,
         path: `${__dirname}/src/notes/`,
-        ignore: process.env.NODE_ENV === `production` && [`**/draft-*`],
       },
     },
     `gatsby-transformer-sharp`,
