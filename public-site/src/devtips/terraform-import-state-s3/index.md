@@ -2,6 +2,7 @@
 title: "How to Import Existing State into Terraform"
 date: "2020-01-04"
 description: "Gradually import existing AWS resources into Terraform State control and Infrastructure as Code version control. We'll explore a basic example of getting an existing AWS S3 bucket under control, and adding some new options to the bucket, straight from code."
+status: "budding"
 ---
 
 <!-- ## What to do with existing cloud resources -->

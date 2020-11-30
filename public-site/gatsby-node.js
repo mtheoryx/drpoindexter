@@ -5,14 +5,8 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  let fileName
-
   if (node.internal.type === `Mdx`) {
     if (node.fileAbsolutePath.includes("/devtips/")) {
-      // create printer nodes only on MD nodes that are content pieces
-      // filePathSplit = node.fileAbsolutePath.split("/")
-      // fileName = filepathSplit[filePathSplit.lenght - 2]
-
       relativeFilePath = createFilePath({
         node,
         getNode,
@@ -49,6 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             frontmatter {
               title
+              status
             }
             fileAbsolutePath
             fields {

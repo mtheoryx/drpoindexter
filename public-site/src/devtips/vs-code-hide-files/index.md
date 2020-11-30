@@ -2,6 +2,7 @@
 title: "How to Hide Sensitive Files in VS Code"
 date: "2019-11-02"
 description: "Hide files in VS Code to protect privacy and avoid security oopsies in live presentations and demos. This is especially important if you are a live code streamer where every one has rewind and screen capture capabilities... and they are already on a computer."
+status: "budding"
 ---
 
 In situations where you are showing code to others, one thing you need to be aware of is what potentially sensitive code you are showing. Situations include streaming on Twitch or demo code in front of a presentation audience or clients.

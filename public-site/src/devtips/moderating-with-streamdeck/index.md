@@ -2,6 +2,7 @@
 title: "Moderating a Conference Livestream with a Streamdeck"
 date: "2020-04-12"
 description: "Moderating a conference stream on Twitch that peaked at over 13,000 live viewers came with challenges. I reached for a hardware tool called StreamDeck to assist me."
+status: "budding"
 ---
 
 Moderating a conference stream on Twitch that peaked at over 13,000 live viewers came with challenges. I reached for a hardware tool called StreamDeck to assist me.

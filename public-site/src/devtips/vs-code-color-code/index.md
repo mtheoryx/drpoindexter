@@ -1,7 +1,8 @@
 ---
 title: "How to Color Code Your Multiple VS Code Windows"
 date: "2019-11-08"
-description: "Color-code multiple VS Code project windows to easily tell what context of code you're working in. It is project-specific and controled by a very simple entry in your project settings file."
+description: "Color-code multiple VS Code project windows to easily tell what context of code you're working in. It is project-specific and controlled by a very simple entry in your project settings file."
+status: "budding"
 ---
 
 I often find myself with a BUNCH of VS Code windows open during any given day. It could be a variety of projects, or even just different aspects of the same project.
