@@ -2,6 +2,8 @@
 title: "List dynamo tables and parse with jq"
 ---
 
+[If you're starting with an input of YAML, here's how you can parse that as well](/notes/yq-for-parsing-yaml-on-cli)
+
 ## List Tables in region
 
 I only have a few tables in a region, in an account. 20 of them, to be precise. Listing tables is a paginated operation. For small counts, it won't page. And you can disable pagination with an option to the command.

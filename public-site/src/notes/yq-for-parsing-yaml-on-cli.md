@@ -2,6 +2,8 @@
 title: Use yq to parse yaml on the command line
 ---
 
+[The syntax for this is similar to JQ, which I touch on here](/notes/dynamo-list-tables)
+
 ## Parse yaml on the command line with yq
 
 As shown in another note, we can parse JSON on the command line with a tool called `jq`.
