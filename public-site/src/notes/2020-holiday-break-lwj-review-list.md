@@ -35,7 +35,7 @@ title: "My 2020 holiday break LWJ rewatch and review guide and list"
 
 ### Dev Fun
 
-- [ ] [https://www.learnwithjason.dev/writing-shell-scripts-with-modern-javascript](https://www.learnwithjason.dev/writing-shell-scripts-with-modern-javascript)
+- [x] [https://www.learnwithjason.dev/writing-shell-scripts-with-modern-javascript](https://www.learnwithjason.dev/writing-shell-scripts-with-modern-javascript)
 - [ ] [https://www.learnwithjason.dev/build-custom-twitch-bots-and-overlays](https://www.learnwithjason.dev/build-custom-twitch-bots-and-overlays)
 - [ ] [https://www.learnwithjason.dev/text-to-play-games-with-twilio](https://www.learnwithjason.dev/text-to-play-games-with-twilio)
 - [ ] [https://www.learnwithjason.dev/end-to-end-testing-with-cypress](https://www.learnwithjason.dev/end-to-end-testing-with-cypress)
