@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `David Poindexter's digital playground`,
+    title: `David Poindexter`,
     description: `David Poindexter's playground, garden, and digital experiment lab`,
     author: `David Poindexter`,
     siteUrl: `https://www.dpoindexter.com`,
