@@ -104,7 +104,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    profile: file(relativePath: { eq: "cstg-david-poindexter-headshot.jpg" }) {
+    profile: file(relativePath: { eq: "profile-image.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 277) {
           ...GatsbyImageSharpFluid
