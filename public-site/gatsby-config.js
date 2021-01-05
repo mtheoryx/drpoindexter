@@ -16,7 +16,6 @@ module.exports = {
       { name: "open source", link: "/opensource", published: false },
       { name: "stream", link: "/stream", published: false },
       { name: "about", link: "/about", published: true },
-      { name: "contact", link: "/contact", published: true },
     ],
   },
   plugins: [
