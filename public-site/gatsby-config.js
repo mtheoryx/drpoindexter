@@ -10,11 +10,6 @@ module.exports = {
     navLinks: [
       { name: "devtips", link: "/devtips", published: true },
       { name: "notes", link: "/notes", published: true },
-      { name: "work", link: "/work", published: false },
-      { name: "writing", link: "/writing", published: false },
-      { name: "projects", link: "/projects", published: false },
-      { name: "open source", link: "/opensource", published: false },
-      { name: "stream", link: "/stream", published: false },
       { name: "about", link: "/about", published: true },
     ],
   },
