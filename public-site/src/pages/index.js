@@ -51,11 +51,13 @@ const IndexPage = ({ data }) => (
         />
       </Side>
       <Main>
-        <h2>Welcome!</h2>
+        <h2>I’m David, a sofware engineer and cloud architect.</h2>
         <p>
-          I'm a midwestern technologist. I primarily came from media production,
-          then custom app dev. After quite a while I transitioned to DevOps and
-          Cloud Architecture.
+          I specialize in <span style={{ fontWeight: 600 }}>serverless</span>{" "}
+          development, cloud{" "}
+          <span style={{ fontWeight: 600 }}>architecture</span> and
+          implementation, and <span style={{ fontWeight: 600 }}>write</span>{" "}
+          about my experiences along the way.
         </p>
 
         <h3>What you'll find here</h3>
