@@ -22,7 +22,7 @@ services:
   #   image: dpoindexter-storybook
   #   container_name: dpoindexter-storybook
   #   init: true
-  #   command: npm run storybook
+  #   command: yarn storybook
   #   ports:
   #     - 6006:6006
   #   volumes:
