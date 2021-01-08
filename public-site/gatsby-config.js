@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://www.dpoindexter.com`,
     url: `https://www.dpoindexter.com`,
     twitterUserName: "@drpoindexter",
-    image: "/images/og-image.png",
+    image: "/images/og-imagev2.png",
     navLinks: [
       { name: "devtips", link: "/devtips", published: true },
       { name: "notes", link: "/notes", published: true },
