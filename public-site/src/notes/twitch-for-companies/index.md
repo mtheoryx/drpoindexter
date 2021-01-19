@@ -19,13 +19,14 @@ title: "Considering Twitch for your Team or Company"
 
 Twitch is a bunch of things, offered nowhere else:
 
-Promotion tool
+Brand Promotion tool
 Social Network
 Hacker Space
 Crowd-Programming
 Research platform
 Artistic Expression
 Conference Platform
+Meet People Where They Are
 
 Think of Twitch as a meetup, at first. Remember meetups?
 
@@ -33,13 +34,15 @@ So you have someone with content, or a few people. You have a space. You have pe
 
 It's a whole ecosystem that suddenly became nigh but irrelevant in 2020. Good news: We've been doing this Twitch thing since before 2019, so certainly before COVID-19.
 
+What do you want out of Twitch? And what are you willing to put in? Theres are your TOP questions before even creating an account. Some people stream to teach others, or promote products/services. Others use it as a way of maintaining social connection and deeper conversation than a tweet can provide. Still some others do it purely for fun, and enjoy broadening the diversity of their relationships.
+
 ### <a name="teams-and-individuals"></a>Teams and Individuals
 
 Individuals streaming on their own channels are a fantastic way to start entering this sphere.
 
 What starts out as an ambitious individual striking into the world of streaming can quickly become a powerhouse for your brand. The platform could be used for showcasing wins, talking about challenges, running contests, doing demos, anything you can image.
 
-To not: Typically individuals are streaming as themselves. They are not beholden to only talk about "company stuff" and it's important to both realize that, and embrace it.
+To note: Typically individuals are streaming as themselves. They are not beholden to only talk about "company stuff" and it's important to both realize that, and embrace it.
 
 People come to the stream for the person, the community, and the content. Not to learn about your company like it's some kind of zoom webinar. New world thinking is required.
 
@@ -49,11 +52,29 @@ Twilio and Microsoft (enumerated below) are great examples of this. However, the
 
 ### <a name="kpis"></a>Measurable KPIs
 
-[What if nobody is watching?](https://egghead.io/lessons/egghead-what-if-nobody-comes-to-watch-my-livestream)
+As mentioned above, Twitch should be seen as a tool. Having followers is a very good thing, but it is complete vanity metrics. It just means that a subset of those people who follow "might" see a notification that you've gone live.
 
-## <a name="first-steps"></a>First Steps
+The more important metric is chat engagement and live viewers. You can 100% control the first one. You can subtly influence the second one.
 
-Figure out who. Content. Promote. Test streams. Video editing. Equipment, workflows. Scenes, transitions. Schedule/time box.
+Chris Biscardi answers this question [What if nobody is watching?](https://egghead.io/lessons/egghead-what-if-nobody-comes-to-watch-my-livestream).
+
+### <a name="first-steps"></a>First Steps
+
+On-screen talent, production, and moderation
+Content Choices
+Promote, Attract, and Engage
+Test Streams and Checklists
+Video Editing and Long Tail Content
+Required Equipment, Pre/Post Production Workflows
+Scenes, Guests, and keeping track of everything
+Schedules and Time Boxing
+A word about Twitch Affiliate
+
+Some Guides/examples:
+
+[Suz Hinton's Early article on a Streamer's setup](https://medium.com/@suzhinton/my-twitch-live-coding-setup-b2516672fb21)
+
+[Brent Schooley's breakdown of Twilio Signal conference stream setup](https://www.twitch.tv/videos/765266675)
 
 ### <a name="community"></a>Community DevRel Examples
 
