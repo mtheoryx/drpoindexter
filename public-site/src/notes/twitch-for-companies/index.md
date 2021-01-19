@@ -2,11 +2,7 @@
 title: "Considering Twitch for your Team or Company"
 ---
 
-<a name="top"></a>
-
 ## Possible Direction with Twitch
-
-**This is a very rough, early alpha draft**
 
 - [What is Twitch](#what-is-twitch)
 - [Teams and Individuals](#teams-and-individuals)
@@ -32,7 +28,7 @@ Think of Twitch as a meetup, at first. Remember meetups?
 
 So you have someone with content, or a few people. You have a space. You have people attend. On the side you have people who are hiring, people want to be hired, vendors wanting to sell, and companies wanting to buy.
 
-It's a whole ecosystem that suddenly became nigh but irrelevant in 2020. Good news: We've been doing this Twitch thing since before 2019, so certainly before COVID-19.
+Meetups are a whole ecosystem that suddenly became nigh but irrelevant in 2020. **Good news: We've been doing this Twitch thing for many years, so certainly before COVID-19.** _And we're getting exceedingly good at it._
 
 What do you want out of Twitch? And what are you willing to put in? Theres are your TOP questions before even creating an account. Some people stream to teach others, or promote products/services. Others use it as a way of maintaining social connection and deeper conversation than a tweet can provide. Still some others do it purely for fun, and enjoy broadening the diversity of their relationships.
 
@@ -108,6 +104,9 @@ DevRel at Twilio
 DevRel at Twilio
 [cldubya](https://www.twitch.tv/cldubya)
 
+DevRel at Auth0
+[jamesqquick](https://www.twitch.tv/jamesqquick)
+
 ### <a name="corp"></a>Corporate Twitch Channels
 
 [Microsoft](https://www.twitch.tv/microsoftdeveloper)
@@ -119,3 +118,5 @@ DevRel at Twilio
 [Apollo](https://www.twitch.tv/apollographql)
 
 [AWS](https://www.twitch.tv/aws)
+
+[Auth0](https://www.twitch.tv/auth0)
