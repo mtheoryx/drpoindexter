@@ -72,6 +72,10 @@ Some Guides/examples:
 
 [Brent Schooley's breakdown of Twilio Signal conference stream setup](https://www.twitch.tv/videos/765266675)
 
+[Starting from Scratch Part 1](https://www.twitch.tv/videos/880629721)
+
+[Starting from Scratch Part 2](https://www.twitch.tv/videos/880638011)
+
 ### <a name="community"></a>Community DevRel Examples
 
 DevRel at Contentful
