@@ -13,3 +13,9 @@ I found a site that works pretty well. Here's the link:
 Here's what it looks like:
 
 ![Card Validation](validator-screenshot.png)
+
+## How to design social cards
+
+So Ryan Warner has this Figma community template, that is a staring point. You'll want the layer named `Static Open Graph Image` for most of this.
+
+[Social Branding Templates](https://www.figma.com/community/file/820337605519256142)
