@@ -2,6 +2,8 @@
 title: "GoXLR Resources and Links"
 ---
 
+**Credits to [Brent Schooley](https://twitter.com/heccbrent) for this list!! hecc**
+
 ## Manual
 
 Product Manual and Downloads:
