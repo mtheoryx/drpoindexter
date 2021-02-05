@@ -76,6 +76,12 @@ Some Guides/examples:
 
 [Starting from Scratch Part 2](https://www.twitch.tv/videos/880638011)
 
+[Chris Biscardi How to record and edit a video course](https://www.christopherbiscardi.com/how-i-record-and-edit-courses)
+
+[Egghead.io Instructor Screencasting technical Guide](https://howtoegghead.com/instructor/screencasting/)
+
+[Stephanie Eckles How to set up vscode for recording a screencast](https://dev.to/5t3ph/how-i-set-up-vscode-for-recording-a-screencast-be7)
+
 ### <a name="community"></a>Community DevRel Examples
 
 DevRel at Contentful
