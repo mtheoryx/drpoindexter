@@ -11,6 +11,7 @@
     "start": "yarn run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "sb": "yarn run storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
