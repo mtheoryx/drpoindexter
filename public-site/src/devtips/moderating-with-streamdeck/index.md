@@ -25,7 +25,7 @@ We continued to learn from the experience and come up with new commands we neede
 
 The command type was the extremely basic 'Text' type. The important part is to select the option to send enter after. This allows for entering the command in the stream chat input box, and firing it into the chat.
 
-_Naturally, my fellow moderators thought I was a robot, until I revelaled my secret._
+_Naturally, my fellow moderators thought I was a robot, until I revealed my secret._
 
 To further illustrate why this was a fantastic idea, just look at a small selection of the commands we were regularly using:
 
