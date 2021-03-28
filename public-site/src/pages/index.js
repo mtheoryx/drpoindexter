@@ -65,7 +65,7 @@ const IndexPage = ({ data }) => (
         <p>
           A collection of things I learn along the way, sometimes really
           interesting, sometimes small observations. I keep collections of
-          notes, a produce some more structured content in the form of devtips.
+          notes, a produce some more structured content in the form of articles.
         </p>
         <ul>
           <li>Programming (mostly Node/JS)</li>

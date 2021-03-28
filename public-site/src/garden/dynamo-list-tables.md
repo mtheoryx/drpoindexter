@@ -2,7 +2,7 @@
 title: "List dynamo tables and parse with jq"
 ---
 
-[If you're starting with an input of YAML, here's how you can parse that as well](/notes/yq-for-parsing-yaml-on-cli)
+[If you're starting with an input of YAML, here's how you can parse that as well](/garden/yq-for-parsing-yaml-on-cli)
 
 ## List Tables in region
 
