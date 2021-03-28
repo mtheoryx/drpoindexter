@@ -13,6 +13,8 @@ AWS themselves have a few things to say about this, and we'll touch on each of t
 
 [8 Reasons for Microservices from AWS (external link)](https://pages.awscloud.com/rs/112-TZM-766/images/AWS_8_Reasons_pdf.pdf)
 
+_You can click to jump to the sections, if you'd like_
+
 - [Pick the Right Tool for the Job](#right-tool)
 - [Improved Resiliency](#resiliency)
 - [Refined Cost control](#cost)
@@ -24,7 +26,7 @@ AWS themselves have a few things to say about this, and we'll touch on each of t
 
 ### <a name="right-tool"></a>Pick the Right Tool for the Job
 
-[Back to top](#top)
+[Back to list](#top)
 
 One misunderstanding about this is that it's just a buffet of programming languages and stacks that you get to pick whatever you want to use. It promises freedom from bureaucracy telling you what to use.
 
@@ -46,7 +48,7 @@ If the service is going to be highly transactional, with purely relational data,
 
 ### <a name="resiliency"></a>Improved Resiliency
 
-[Back to top](#top)
+[Back to list](#top)
 
 Resiliency is crucial when architecting systems. Failure should be expected as a rule, not treated as an exception. There are things beyond control, but not beyond design. Identify failure modes, and compensate for those from the beginning.
 
@@ -70,7 +72,7 @@ However, just because you can't pay for a thing doesn't mean things currently on
 
 ### <a name="cost"></a>Refined Cost control
 
-[Back to top](#top)
+[Back to list](#top)
 
 In a monolith, the environment must scale up to the demand that is required by any part of the system. WordPress is a great example of this. Regardless what part of the CMS is experiencing the demand, the entire thing must grow to compensate for this.
 
@@ -86,7 +88,7 @@ If the internet is giving your latest article a great big hug, you shouldn't nee
 
 ### <a name="productivity"></a>Improved Team productivity
 
-[Back to top](#top)
+[Back to list](#top)
 
 Developing features and remediating defects in a monolith requires a wholesale reproduction of the entire system and stack, just to get started. Depending on the size and complexity of such a monolith, even the most sophisticated development environments can be sufficiently taxed for resources.
 
@@ -105,7 +107,7 @@ As discussed above, it's possible for this entire process to be done with minima
 
 ### <a name="reuse"></a>Reuse with Composition
 
-[Back to top](#top)
+[Back to list](#top)
 
 If we think about the Single Responsibility Principle in software design, and apply the same line of thought to systems and services, a fascinating pattern emerges. So long as we honor our existing service contracts, we can enhance our service as feature requirements change, with impact limited to only the responsible service.
 
@@ -120,7 +122,7 @@ The additional use cases require changes only to one service, instead of somethi
 
 ### <a name="experiment"></a>Safely experiment, Reduce Failure Impact
 
-[Back to top](#top)
+[Back to list](#top)
 
 Experimenting with new technology and design patterns used to be quite difficult in a monolith. One particular challenge is the codebase itself; keeping in sync with the rest of the changes while you develop your experiment. Using a service based architecture reduces the amount of "other" code you are competing with as you try to migrate to a new pattern.
 
@@ -134,7 +136,7 @@ As an example, trying to migrate to leveraging state machines for state manageme
 
 ### <a name="tech-adoption"></a>Accelerate Tech Adoption
 
-[Back to top](#top)
+[Back to list](#top)
 
 As an example, adopting new logging and metrics tools is scoped down to a single, focused service. And if the experiment is deemed a failure, the impact of that failure is restricted down to just the service, while the rest of the system can still perform as before. Consider it a canary, of sorts.
 
@@ -149,7 +151,7 @@ Additionally because there is less functionality and responsibility in a single 
 
 ### <a name="deploy-safe"></a>Deploy Faster, and Safer
 
-[Back to top](#top)
+[Back to list](#top)
 
 Ah, deploy day. Or night. What a time to be alive, right? Middle of the night, sure hope traffic is low and everyone is logged out. Hope it all goes as planned. Oh it didn't? Hecc, how do we unravel this, redeploy the whole thing another time after we fixed this.
 
@@ -167,7 +169,7 @@ Problem with the deploy? You still need to roll back, but the rest of the system
 
 ## <a name="recap"></a>Recap
 
-[Back to top](#top)
+[Back to list](#top)
 
 Breaking a monolith into loosely-coupled, event-driven services offers some amazing potential benefits in the areas of cost, flexibility, and security.
 
@@ -180,4 +182,4 @@ This is not to say there won't be challenges. Microservices done poorly are wors
 
 With this in mind, make sure to have a discussion with your team. Identify those challenge points and consider them from the start as you start to adopt an application modernization effort, or green field development.
 
-[Back to top](#top)
+[Back to list](#top)
