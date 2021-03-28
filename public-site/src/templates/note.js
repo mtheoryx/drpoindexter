@@ -8,7 +8,7 @@ import BackToListNav from "../components/backToListNav/backToListNav"
 const NoteDetailTemplate = ({ data }) => (
   <Layout>
     <SEO title={data.mdx.frontmatter.title} />
-    <BackToListNav destination="/notes/" name="Back to notes" />
+    <BackToListNav destination="/garden/" name="Back to garden" />
     <h1>{data.mdx.frontmatter.title}</h1>
     <MDXRenderer>{data.mdx.body}</MDXRenderer>
   </Layout>

@@ -17,17 +17,17 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: `slug`,
         value: `/articles${relativeFilePath}`,
       })
-    } else if (node.fileAbsolutePath.includes("/notes/")) {
+    } else if (node.fileAbsolutePath.includes("/garden/")) {
       // create printer nodes only on MD nodes that are content pieces
       relativeFilePath = createFilePath({
         node,
         getNode,
-        basePath: "notes/",
+        basePath: "garden/",
       })
       createNodeField({
         node,
         name: `slug`,
-        value: `/notes${relativeFilePath}`,
+        value: `/garden${relativeFilePath}`,
       })
     }
   }
@@ -69,8 +69,8 @@ exports.createPages = ({ graphql, actions }) => {
         })
       }
 
-      if (node.fileAbsolutePath && node.fileAbsolutePath.includes("/notes/")) {
-        // Create the notes pages
+      if (node.fileAbsolutePath && node.fileAbsolutePath.includes("/garden/")) {
+        // Create the garden pages
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/note.js`),

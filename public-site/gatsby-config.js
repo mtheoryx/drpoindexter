@@ -8,8 +8,8 @@ module.exports = {
     twitterUserName: "@drpoindexter",
     image: "/images/og-image-static-night-ship.png",
     navLinks: [
-      { name: "articles", link: "/articles", published: true }, //articles
-      { name: "notes", link: "/notes", published: true }, //garden
+      { name: "articles", link: "/articles", published: true },
+      { name: "garden", link: "/garden", published: true }, //garden
       { name: "about", link: "/about", published: true }, //about with sublinks
     ],
   },
@@ -68,8 +68,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `notes`,
-        path: `${__dirname}/src/notes/`,
+        name: `gardn`,
+        path: `${__dirname}/src/garden/`,
       },
     },
     `gatsby-transformer-sharp`,
