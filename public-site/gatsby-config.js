@@ -8,9 +8,9 @@ module.exports = {
     twitterUserName: "@drpoindexter",
     image: "/images/og-image-static-night-ship.png",
     navLinks: [
-      { name: "devtips", link: "/devtips", published: true },
-      { name: "notes", link: "/notes", published: true },
-      { name: "about", link: "/about", published: true },
+      { name: "articles", link: "/articles", published: true }, //articles
+      { name: "notes", link: "/notes", published: true }, //garden
+      { name: "about", link: "/about", published: true }, //about with sublinks
     ],
   },
   plugins: [
@@ -61,8 +61,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `devtips`,
-        path: `${__dirname}/src/devtips/`,
+        name: `articles`,
+        path: `${__dirname}/src/articles/`,
       },
     },
     {

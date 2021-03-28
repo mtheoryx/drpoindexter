@@ -3,7 +3,7 @@ import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
-const DevtipsIndexPage = ({ data }) => (
+const NotesIndexPage = ({ data }) => (
   <Layout>
     <Helmet
       htmlAttributes={{
@@ -37,7 +37,7 @@ const DevtipsIndexPage = ({ data }) => (
   </Layout>
 )
 
-export default DevtipsIndexPage
+export default NotesIndexPage
 
 export const pageQuery = graphql`
   query {
