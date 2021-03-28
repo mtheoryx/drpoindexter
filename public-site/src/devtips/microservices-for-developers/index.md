@@ -72,7 +72,7 @@ However, just because you can't pay for a thing doesn't mean things currently on
 
 [Back to top](#top)
 
-In a monolith, the environment must scale up to the demand that is required by any part of the system. Wordpress is a great example of this. Regardless what part of the CMS is experiencing the demand, the entire thing must grow to compensate for this.
+In a monolith, the environment must scale up to the demand that is required by any part of the system. WordPress is a great example of this. Regardless what part of the CMS is experiencing the demand, the entire thing must grow to compensate for this.
 
 However, if this were broken apart into independent services, those could be scaled independently, leaving the other services right where they were. And metrics can be granularly collected on each service to pinpoint exactly which one is experiencing demand increase.
 
@@ -109,7 +109,7 @@ As discussed above, it's possible for this entire process to be done with minima
 
 If we think about the Single Responsibility Principle in software design, and apply the same line of thought to systems and services, a fascinating pattern emerges. So long as we honor our existing service contracts, we can enhance our service as feature requirements change, with impact limited to only the responsible service.
 
-Additionally, it often happens that a service already exists that can just be leveraged by another system as business needs change. As an example, a service that aggregates metrics and analytics data could then be roped into a new service to collect user behavior data, uptime reporting, resource utilization, and much more.
+Additionally, it often happens that a service already exists that can just be leveraged by another system as business needs change. As an example, a service that aggregates metrics and analytics data could then be orchestrated into a new service to collect user behavior data, uptime reporting, resource utilization, and much more.
 
 The additional use cases require changes only to one service, instead of something that threads and snakes its way through the monolith. Or worse, complete rewrites of previously-working functionality.
 
@@ -155,7 +155,7 @@ Ah, deploy day. Or night. What a time to be alive, right? Middle of the night, s
 
 That's life in the monolith. Personally? I don't miss it.
 
-Instead, it's less stress when focusing on a single service. Consider possibly a canary or a blue-green deployment. The code changes are smaller, the build and test times are faster, the deploy and bring live times are minutes, not hours.
+Instead, it's less stress when focusing on a single service. Consider possibly a canary or a blue-green deployment. The code changes are smaller, the build and test times are faster, the deploy and go-live times are minutes, not hours.
 
 Problem with the deploy? You still need to roll back, but the rest of the system is left much less disturbed, and the previous working version will be reverted to via DNS or redeployed much faster than an entire monolith.
 
