@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+import colors from "../colors"
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
@@ -11,39 +12,45 @@ const GlobalStyle = createGlobalStyle`
 
 const fonts = {
   fonts: {
-    sans: "'Roboto Slab', sans-serif"
+    sans: "'Roboto Slab', sans-serif",
   },
   fontSizes: {
     base: "1em", //16px
     small: "1.125em", //18px
     medium: "1.375em", //22px
-    large: "2.375em" //38px
+    large: "2.375em", //38px
   },
   fontWeights: {
-    bold: "700"
-  }
+    bold: "700",
+  },
 }
 
-const lightTheme = Object.assign({
-  colors: {
-    Background: "#fff6ff",
-    LinkHover: "#481380",
-    Link: "#160029",
-    Border: "#CDCBE7",
-  }
-}, fonts)
+const lightTheme = Object.assign(
+  {
+    colors: {
+      Background: colors.whitePink,
+      LinkHover: colors.purple,
+      Link: colors.purpleBlack,
+      Border: colors.lightBlue,
+    },
+  },
+  fonts
+)
 
-const darkTheme = Object.assign({
-  colors: {
-    Background: "#160029",
-    LinkHover: "#CDCBE7",
-    Link: "#CDCBE7",
-    Border: "#CDCBE7",
-  }
-}, fonts)
+const darkTheme = Object.assign(
+  {
+    colors: {
+      Background: colors.purpleBlack,
+      LinkHover: colors.lightBlue,
+      Link: colors.lightBlue,
+      Border: colors.lightBlue,
+    },
+  },
+  fonts
+)
 
 const StyledFooter = styled.footer`
-  background: ${({theme}) => theme.colors.Background};
+  background: ${({ theme }) => theme.colors.Background};
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -51,15 +58,15 @@ const StyledFooter = styled.footer`
   padding: 0;
   height: 60px;
   align-items: center;
-  font-size: ${({theme}) => theme.fontSizes.small};
-  font-family: ${({theme}) => theme.fonts.sans};
-  font-weight: ${({theme}) => theme.fontWeights.bold};
-  border-top: 3px solid ${({theme}) => theme.colors.Border};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  font-family: ${({ theme }) => theme.fonts.sans};
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  border-top: 3px solid ${({ theme }) => theme.colors.Border};
   a {
-    color: ${({theme}) => theme.colors.Link};
+    color: ${({ theme }) => theme.colors.Link};
   }
   a:hover {
-    color: ${({theme}) => theme.colors.LinkHover};
+    color: ${({ theme }) => theme.colors.LinkHover};
     text-decoration: underline;
   }
   a:not(:first-child) {
@@ -84,8 +91,8 @@ const StyledFooter = styled.footer`
   }
 `
 
-const Footer = ({theme}) => {
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+const Footer = ({ theme }) => {
+  const themeMode = theme === "light" ? lightTheme : darkTheme
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
