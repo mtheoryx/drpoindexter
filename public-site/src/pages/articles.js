@@ -3,13 +3,13 @@ import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 
-const DevtipsIndexPage = ({ data }) => (
+const ArticlesIndexPage = ({ data }) => (
   <Layout>
     <Helmet
       htmlAttributes={{
         lang: "en",
       }}
-      title="DevTips | David Poindexter"
+      title="Articles | David Poindexter"
       meta={[
         {
           name: "description",
@@ -17,10 +17,10 @@ const DevtipsIndexPage = ({ data }) => (
         },
       ]}
     />
-    <h2>Developer Tips and Tricks</h2>
+    <h2>Articles and Opinion</h2>
 
     <ul style={{ listStyle: "none" }}>
-      {data.Devtips.nodes.map((node) => (
+      {data.Articles.nodes.map((node) => (
         <li
           key={node.id}
           style={{
@@ -40,12 +40,12 @@ const DevtipsIndexPage = ({ data }) => (
   </Layout>
 )
 
-export default DevtipsIndexPage
+export default ArticlesIndexPage
 
 export const pageQuery = graphql`
   query {
-    Devtips: allMdx(
-      filter: { fileAbsolutePath: { regex: "/devtips/" } }
+    Articles: allMdx(
+      filter: { fileAbsolutePath: { regex: "/articles/" } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {

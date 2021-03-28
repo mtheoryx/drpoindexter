@@ -5,16 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BackToListNav from "../components/backToListNav/backToListNav"
 
-const DevtipsDetailTemplate = ({ data }) => (
+const NoteDetailTemplate = ({ data }) => (
   <Layout>
     <SEO title={data.mdx.frontmatter.title} />
-    <BackToListNav destination="/notes/" name="Back to notes" />
+    <BackToListNav destination="/garden/" name="Back to garden" />
     <h1>{data.mdx.frontmatter.title}</h1>
     <MDXRenderer>{data.mdx.body}</MDXRenderer>
   </Layout>
 )
 
-export default DevtipsDetailTemplate
+export default NoteDetailTemplate
 
 export const query = graphql`
   query($slug: String) {

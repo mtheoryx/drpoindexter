@@ -6,28 +6,28 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `Mdx`) {
-    if (node.fileAbsolutePath.includes("/devtips/")) {
+    if (node.fileAbsolutePath.includes("/articles/")) {
       relativeFilePath = createFilePath({
         node,
         getNode,
-        basePath: "devtips/",
+        basePath: "articles/",
       })
       createNodeField({
         node,
         name: `slug`,
-        value: `/devtips${relativeFilePath}`,
+        value: `/articles${relativeFilePath}`,
       })
-    } else if (node.fileAbsolutePath.includes("/notes/")) {
+    } else if (node.fileAbsolutePath.includes("/garden/")) {
       // create printer nodes only on MD nodes that are content pieces
       relativeFilePath = createFilePath({
         node,
         getNode,
-        basePath: "notes/",
+        basePath: "garden/",
       })
       createNodeField({
         node,
         name: `slug`,
-        value: `/notes${relativeFilePath}`,
+        value: `/garden${relativeFilePath}`,
       })
     }
   }
@@ -55,22 +55,22 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `).then((result) => {
     result.data.allMdx.edges.forEach(({ node }) => {
-      // Create the devtips pages
+      // Create the articles pages
       if (
         node.fileAbsolutePath &&
-        node.fileAbsolutePath.includes("/devtips/")
+        node.fileAbsolutePath.includes("/articles/")
       ) {
         createPage({
           path: node.fields.slug,
-          component: path.resolve(`./src/templates/devtip.js`),
+          component: path.resolve(`./src/templates/article.js`),
           context: {
             slug: node.fields.slug,
           },
         })
       }
 
-      if (node.fileAbsolutePath && node.fileAbsolutePath.includes("/notes/")) {
-        // Create the notes pages
+      if (node.fileAbsolutePath && node.fileAbsolutePath.includes("/garden/")) {
+        // Create the garden pages
         createPage({
           path: node.fields.slug,
           component: path.resolve(`./src/templates/note.js`),

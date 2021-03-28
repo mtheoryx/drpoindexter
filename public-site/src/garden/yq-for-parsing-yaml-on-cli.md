@@ -2,7 +2,7 @@
 title: Use yq to parse yaml on the command line
 ---
 
-[The syntax for this is similar to JQ, which I touch on here](/notes/dynamo-list-tables)
+[The syntax for this is similar to JQ, which I touch on here](/garden/dynamo-list-tables)
 
 ## Parse yaml on the command line with yq
 
