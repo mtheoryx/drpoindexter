@@ -1,32 +1,32 @@
 import React from "react"
 import styled from "styled-components"
 
-import Logo from "."
+import SiteNav from "."
 
 export default {
-  title: "Dashboard/logo",
+  title: "Dashboard/SiteNav",
 }
 
 const LightBackground = styled.div`
   width: 100%;
-  height: 600px;
+  height: 60px;
   background-color: #481380;
 `
 
 const DarkBackground = styled.div`
   width: 100%;
-  height: 600px;
+  height: 60px;
   background-color: #160029;
 `
 
-export const lightLogo = () => (
+export const lightSiteNav = () => (
   <LightBackground>
-    <Logo theme={"light"} />
+    <SiteNav theme={"light"} />
   </LightBackground>
 )
 
-export const darkLogo = () => (
+export const darkSiteNav = () => (
   <DarkBackground>
-    <Logo theme={"dark"} />
+    <SiteNav theme={"dark"} />
   </DarkBackground>
 )

@@ -14,7 +14,7 @@ const fonts = {
     serif: "'Faustina', serif",
   },
   fontSizes: {
-    base: "1.5em", // 16px/24px => 1.5em
+    base: "1.125em", // 16px/18px => 1.125em
   },
   fontWeights: {
     bold: "700",
@@ -39,22 +39,53 @@ const darkTheme = Object.assign(
   fonts
 )
 
-const StyledSiteTitle = styled.h1`
+const StyledNavGroup = styled.nav`
   font-size: ${({ theme }) => theme.fontSizes.base};
   font-weight: 700;
   font-family: ${({ theme }) => theme.fonts.serif};
   color: ${({ theme }) => theme.colors.Text};
   letter-spacing: 0.08rem;
+  display: flex;
+  justify-content: space-between;
+  ol {
+    list-style-type: none;
+    display: flex;
+    li {
+      margin: 0 5px;
+      a {
+        font-size: ${({ theme }) => theme.fontSizes.base};
+        font-weight: 700;
+        font-family: ${({ theme }) => theme.fonts.serif};
+        color: ${({ theme }) => theme.colors.Text};
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 `
 
-const SiteTitle = ({ theme }) => {
+const SiteNav = ({ theme }) => {
   const themeMode = theme === "light" ? lightTheme : darkTheme
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <StyledSiteTitle>David Poindexter</StyledSiteTitle>
+      <StyledNavGroup>
+        <ol>
+          <li>
+            <a>Articles</a>
+          </li>
+          <li>
+            <a>Garden</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+        </ol>
+      </StyledNavGroup>
     </ThemeProvider>
   )
 }
 
-export default SiteTitle
+export default SiteNav
