@@ -9,13 +9,13 @@ export default {
 
 const LightBackground = styled.div`
   width: 100%;
-  height: 600px;
+  height: 100px;
   background-color: #481380;
 `
 
 const DarkBackground = styled.div`
   width: 100%;
-  height: 600px;
+  height: 100px;
   background-color: #160029;
 `
 

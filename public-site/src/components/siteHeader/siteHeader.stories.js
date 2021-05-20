@@ -5,4 +5,6 @@ export default {
   title: "Dashboard/SiteHeader",
 }
 
-export const siteHeader = () => <SiteHeader />
+export const lightSiteHeader = () => <SiteHeader theme={"light"} />
+
+export const darkSiteHeader = () => <SiteHeader theme={"dark"} />
