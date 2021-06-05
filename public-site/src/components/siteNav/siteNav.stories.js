@@ -4,7 +4,7 @@ import styled from "styled-components"
 import SiteNav from "."
 
 export default {
-  title: "Dashboard/SiteNav",
+  title: "Components/SiteNav",
 }
 
 const LightBackground = styled.div`

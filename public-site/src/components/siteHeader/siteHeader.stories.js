@@ -2,7 +2,7 @@ import React from "react"
 import SiteHeader from "."
 
 export default {
-  title: "Dashboard/SiteHeader",
+  title: "Composites/SiteHeader",
 }
 
 export const lightSiteHeader = () => <SiteHeader theme={"light"} />

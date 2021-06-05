@@ -2,9 +2,9 @@ import React from "react"
 import Footer from "."
 
 export default {
-  title: "Dashboard/footer",
+  title: "Components/footer",
 }
 
-export const footerLight = () => <Footer theme="light"/>
+export const footerLight = () => <Footer theme="light" />
 
-export const footerDark = () => <Footer theme="dark"/>
+export const footerDark = () => <Footer theme="dark" />

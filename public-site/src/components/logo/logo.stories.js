@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Logo from "."
 
 export default {
-  title: "Dashboard/logo",
+  title: "Components/logo",
 }
 
 const LightBackground = styled.div`
