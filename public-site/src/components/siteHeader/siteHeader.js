@@ -55,6 +55,7 @@ const SiteHeader = ({ theme }) => {
         <StyledHeaderWrapper>
           <WordMarkWrapper>
             <Logo theme={theme} />
+            &nbsp;&nbsp;&nbsp;
             <SiteTitle theme={theme} />
           </WordMarkWrapper>
           <StyledNavWrapper>
