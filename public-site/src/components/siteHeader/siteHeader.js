@@ -31,7 +31,8 @@ const StyledSiteHeader = styled.div`
 `
 
 const StyledHeaderWrapper = styled.div`
-  max-width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
