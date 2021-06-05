@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+import { Link } from "gatsby"
 import colors from "../colors"
 
 const GlobalStyle = createGlobalStyle`
@@ -50,18 +51,18 @@ const StyledNavGroup = styled.nav`
   ol {
     list-style-type: none;
     display: flex;
-    li {
-      margin: 0 5px;
-      a {
-        font-size: ${({ theme }) => theme.fontSizes.base};
-        font-weight: 700;
-        font-family: ${({ theme }) => theme.fonts.serif};
-        color: ${({ theme }) => theme.colors.Text};
-        cursor: pointer;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+  }
+`
+const StyledNavLink = styled.li`
+  margin: 0 5px;
+  a {
+    font-size: ${({ theme }) => theme.fontSizes.base};
+    font-weight: 700;
+    font-family: ${({ theme }) => theme.fonts.serif};
+    color: ${({ theme }) => theme.colors.Text};
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
     }
   }
 `
@@ -73,15 +74,15 @@ const SiteNav = ({ theme }) => {
       <GlobalStyle />
       <StyledNavGroup>
         <ol>
-          <li>
-            <a>Articles</a>
-          </li>
-          <li>
-            <a>Garden</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
+          <StyledNavLink>
+            <Link to="/articles">Articles</Link>
+          </StyledNavLink>
+          <StyledNavLink>
+            <Link to="/garden">Garden</Link>
+          </StyledNavLink>
+          <StyledNavLink>
+            <Link to="/about">About</Link>
+          </StyledNavLink>
         </ol>
       </StyledNavGroup>
     </ThemeProvider>
