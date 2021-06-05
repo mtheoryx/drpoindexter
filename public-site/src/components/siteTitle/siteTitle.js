@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import colors from "../colors"
 
@@ -45,6 +46,13 @@ const StyledSiteTitle = styled.h1`
   font-family: ${({ theme }) => theme.fonts.serif};
   color: ${({ theme }) => theme.colors.Text};
   letter-spacing: 0.08rem;
+  a {
+    color: ${({ theme }) => theme.colors.Text};
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 const SiteTitle = ({ theme }) => {
@@ -52,7 +60,9 @@ const SiteTitle = ({ theme }) => {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
-      <StyledSiteTitle>David Poindexter</StyledSiteTitle>
+      <StyledSiteTitle>
+        <Link to="/">David Poindexter</Link>
+      </StyledSiteTitle>
     </ThemeProvider>
   )
 }
