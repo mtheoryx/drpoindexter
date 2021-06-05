@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import lightLogo from "./ShipLogoLight.svg"
 import darkLogo from "./ShipLogoDark.svg"
@@ -10,7 +11,14 @@ const Logo = ({ theme }) => {
   const image = theme === "light" ? lightLogo : darkLogo
   return (
     <StyledLogo>
-      <img src={image} height="88" width="88" />
+      <Link to="/">
+        <img
+          src={image}
+          height="88"
+          width="88"
+          alt="Ship logo that navigates home"
+        />
+      </Link>
     </StyledLogo>
   )
 }
