@@ -61,6 +61,7 @@ const StyledNavLink = styled.li`
     font-family: ${({ theme }) => theme.fonts.serif};
     color: ${({ theme }) => theme.colors.Text};
     cursor: pointer;
+    text-decoration: none;
     &:hover {
       text-decoration: underline;
     }

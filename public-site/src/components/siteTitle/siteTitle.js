@@ -49,6 +49,7 @@ const StyledSiteTitle = styled.h1`
   a {
     color: ${({ theme }) => theme.colors.Text};
     cursor: pointer;
+    text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
