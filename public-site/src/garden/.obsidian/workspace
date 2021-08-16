@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "fbf436ca567dcc40",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdb8a41dfa761af1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "dynamo-geo-hashing.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "958fae7ac8513a70",
+    "type": "split",
+    "children": [
+      {
+        "id": "a489ffffbf3f6648",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7f5118e45dbd8b8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f4a077ed7d0640e1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 402
+  },
+  "right": {
+    "id": "f886a70aef13db1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "6295a8bf4c9de1a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e3501f697257e47",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "dynamo-geo-hashing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "bdb8a41dfa761af1",
+  "lastOpenFiles": [
+    "dynamo-geo-hashing.md",
+    "fist-time-pc-initial-setup.md",
+    "install-cmder-on-win-10-wsl-1.md",
+    "streaming-pc/index.md",
+    "dynamo-geo-hashing.md.md",
+    "audio-meter-zones.md",
+    "Untitled.md"
+  ]
+}
