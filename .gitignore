@@ -187,3 +187,7 @@ awsconfiguration.json
 amplifyconfiguration.json
 amplify-gradle-config.json
 amplifyxc.config
+
+# Obsidian Config
+public-site/src/garden/.obsidian/*
+public-site/src/garden/.obsidian/workspace
