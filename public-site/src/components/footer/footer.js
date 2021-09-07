@@ -49,11 +49,17 @@ const darkTheme = Object.assign(
   fonts
 )
 
+const StyledFooterWrapper = styled.div`
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
+`
+
 const StyledFooter = styled.footer`
   background: ${({ theme }) => theme.colors.Background};
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
   margin: 0;
   padding: 0;
   height: 60px;
@@ -97,32 +103,34 @@ const Footer = ({ theme }) => {
     <ThemeProvider theme={themeMode}>
       <GlobalStyle />
       <StyledFooter>
-        <span className="essential">
+        <StyledFooterWrapper>
+          <span className="essential">
+            <a
+              href="https://www.dpoindexter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              © {new Date().getFullYear()} David Poindexter
+            </a>
+          </span>
+
           <a
-            href="https://www.dpoindexter.com/"
+            href="https://twitter.com/drpoindexter"
             target="_blank"
             rel="noopener noreferrer"
+            className="optional1"
           >
-            © {new Date().getFullYear()} David Poindexter
+            @drpoindexter
           </a>
-        </span>
-
-        <a
-          href="https://twitter.com/drpoindexter"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="optional1"
-        >
-          @drpoindexter
-        </a>
-        <a
-          href="https://aws.amazon.com/amplify/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="optional2"
-        >
-          AWS Amplify
-        </a>
+          <a
+            href="https://aws.amazon.com/amplify/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="optional2"
+          >
+            AWS Amplify
+          </a>
+        </StyledFooterWrapper>
       </StyledFooter>
     </ThemeProvider>
   )

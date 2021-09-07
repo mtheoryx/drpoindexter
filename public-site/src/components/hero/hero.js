@@ -60,10 +60,7 @@ const StyledHero = styled.div`
 `
 
 const StyledHeroWrapper = styled.div`
-  width: 760px;
-  max-width: 760px;
   height: 360px;
-  margin: 20px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
