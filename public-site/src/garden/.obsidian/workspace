@@ -1,45 +1,32 @@
 {
   "main": {
-    "id": "e31e1c4e4f86aa1e",
+    "id": "fbf436ca567dcc40",
     "type": "split",
     "children": [
       {
-        "id": "5b8a69be8a00277f",
+        "id": "bdb8a41dfa761af1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "toxic-sexism-is-absolutely-your-responsibility/index.md",
+            "file": "dynamo-geo-hashing.md",
             "mode": "source"
           }
-        },
-        "group": "54d2964ae8451454"
-      },
-      {
-        "id": "2c6082f4d7d55882",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "toxic-sexism-is-absolutely-your-responsibility/index.md",
-            "mode": "preview"
-          }
-        },
-        "group": "54d2964ae8451454"
+        }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "9e2391ce089c4515",
+    "id": "958fae7ac8513a70",
     "type": "split",
     "children": [
       {
-        "id": "751ac9af8084b985",
+        "id": "a489ffffbf3f6648",
         "type": "tabs",
         "children": [
           {
-            "id": "3adba76ebe68f594",
+            "id": "d7f5118e45dbd8b8",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -47,7 +34,7 @@
             }
           },
           {
-            "id": "6e53ce79e03c23c3",
+            "id": "f4a077ed7d0640e1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,23 +52,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 402
   },
   "right": {
-    "id": "95d2273e9cf45f7b",
+    "id": "f886a70aef13db1d",
     "type": "split",
     "children": [
       {
-        "id": "f31027410b6330e5",
+        "id": "6295a8bf4c9de1a5",
         "type": "tabs",
         "children": [
           {
-            "id": "4ae09c92c861c7d4",
+            "id": "1e3501f697257e47",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "toxic-sexism-is-absolutely-your-responsibility/index.md",
+                "file": "dynamo-geo-hashing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,14 +86,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5b8a69be8a00277f",
+  "active": "bdb8a41dfa761af1",
   "lastOpenFiles": [
-    "toxic-sexism-is-absolutely-your-responsibility/index.md",
-    "presentation-timing/index.md",
-    "reaction-gifs-utility/index.md",
-    "aws-accounts-emails.md",
-    "why-build-a-gatsby-theme/index.md",
-    "2020-holiday-break-lwj-review-list.md",
-    "audio-meter-zones.md"
+    "dynamo-geo-hashing.md",
+    "fist-time-pc-initial-setup.md",
+    "install-cmder-on-win-10-wsl-1.md",
+    "streaming-pc/index.md",
+    "dynamo-geo-hashing.md.md",
+    "audio-meter-zones.md",
+    "Untitled.md"
   ]
 }
