@@ -1,5 +1,6 @@
 ---
 title: "Validate Twitter social cards for your website"
+status: "featured"
 ---
 
 ## What is a twitter card

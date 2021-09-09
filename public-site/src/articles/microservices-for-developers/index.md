@@ -2,7 +2,7 @@
 title: "Microservices, Monoliths, and Myths, for Developers"
 date: "2021-03-22"
 description: "'Microservices' as a term gets thrown around a lot in conversation, but let's break down what this term even means for a developer. And call out some potential problems."
-status: "seedling"
+status: "featured"
 ---
 
 You see the term `microservices` tossed around often on powerpoint slides, webinars, and sales glossy handouts, but it's one of those words that we seldom discuss in detail as developers. Let's cut through the noise and talk about what this means to you, a developer.

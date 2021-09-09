@@ -1,5 +1,6 @@
 ---
 title: "How to close an AWS Organization Sub-account"
+status: "featured"
 ---
 
 tldr: You must login as the root user for that account
