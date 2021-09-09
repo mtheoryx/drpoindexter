@@ -35,15 +35,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header theme="light" />
 
-      <main
-        style={{
-          borderBottom: "1px solid grey",
-          marginBottom: "15px",
-          backgroundColor: "#FFF6FF",
-        }}
-      >
-        {children}
-      </main>
+      <main>{children}</main>
 
       <Footer theme="light" />
     </>

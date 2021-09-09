@@ -26,14 +26,14 @@ const ListSummaryWrapper = styled.div`
 
 const ListSummaryHeader = styled.h3`
   font-family: "'Faustina', serif";
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: ${(props) => props.theme.colors.Text};
 `
 
 const ListSummaryLink = styled(Link)`
   font-family: "'Roboto', sans-serif";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: ${(props) => props.theme.colors.Text};
 `
 

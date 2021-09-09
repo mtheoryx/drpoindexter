@@ -1,8 +1,14 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
+import styled from "styled-components"
 import Layout from "../components/layout"
 
+const Container = styled.div`
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 30px;
+`
 const GardenIndexPage = ({ data }) => (
   <Layout>
     <Helmet
@@ -18,22 +24,24 @@ const GardenIndexPage = ({ data }) => (
         },
       ]}
     />
-    <h2>Digital Garden, seeds grow here</h2>
+    <Container>
+      <h2>Digital Garden, seeds grow here</h2>
 
-    <ul style={{ listStyle: "none" }}>
-      {data.Garden.nodes.map((node) => (
-        <li
-          key={node.id}
-          style={{
-            border: "1px solid #ccc",
-            padding: "8px",
-            borderRadius: "3px",
-          }}
-        >
-          <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-        </li>
-      ))}
-    </ul>
+      <ul style={{ listStyle: "none" }}>
+        {data.Garden.nodes.map((node) => (
+          <li
+            key={node.id}
+            style={{
+              border: "1px solid #ccc",
+              padding: "8px",
+              borderRadius: "3px",
+            }}
+          >
+            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </Container>
   </Layout>
 )
 

@@ -1,9 +1,15 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
+import styled from "styled-components"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import ListSummary from "../components/listSummary"
+
+const Container = styled.div`
+  max-width: 700px;
+  margin: 0 auto;
+`
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -20,7 +26,7 @@ const IndexPage = ({ data }) => (
       ]}
     />
     <Hero theme="light" />
-    <div className="container">
+    <Container>
       <div className="articles">
         <ListSummary
           heading={"Featured Articles"}
@@ -47,7 +53,7 @@ const IndexPage = ({ data }) => (
           ))}
         </ul>
       </div>
-    </div>
+    </Container>
   </Layout>
 )
 
