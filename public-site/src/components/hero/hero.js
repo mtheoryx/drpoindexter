@@ -1,17 +1,18 @@
 import React from "react"
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+// import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 import colors from "../colors"
 import Profile from "../profile"
 import LightHero from "./hero-image-light.png"
 import DarkHero from "./hero-image-dark.png"
 
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Faustina:wght@700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
-  body {
-    font-size: 16px;
-  }
-`
+// const GlobalStyle = createGlobalStyle`
+//   @import url('https://fonts.googleapis.com/css2?family=Faustina:wght@700&display=swap');
+//   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+//   body {
+//     font-size: 16px;
+//   }
+// `
 
 const fonts = {
   fonts: {

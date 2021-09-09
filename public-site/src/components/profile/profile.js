@@ -5,7 +5,9 @@ import darkProfile from "./profile-image-dark.png"
 
 const Profile = ({ theme }) => {
   const image = theme === "light" ? lightProfile : darkProfile
-  return <img src={image} height="220" width="220" />
+  return (
+    <img src={image} height="220" width="220" alt="David Poindexter profile" />
+  )
 }
 
 export default Profile
