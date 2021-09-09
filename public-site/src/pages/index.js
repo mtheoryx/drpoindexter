@@ -22,6 +22,9 @@ const IndexPage = ({ data }) => (
     <div className="container">
       <div className="articles">
         <h3>Featured Articles</h3>
+        <span>
+          <Link to="/articles">See All Articles</Link>
+        </span>
         <ul>
           {data.Articles.nodes.map((node) => (
             <li key={node.id}>
@@ -32,6 +35,9 @@ const IndexPage = ({ data }) => (
       </div>
       <div className="seeds">
         <h3>Garden Seeds</h3>
+        <span>
+          <Link to="/garden">See All Garden Seeds</Link>
+        </span>
         <ul>
           {data.Garden.nodes.map((node) => (
             <li key={node.id}>
