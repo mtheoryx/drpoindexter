@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
+import ListSummary from "../components/listSummary"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -21,10 +22,12 @@ const IndexPage = ({ data }) => (
     <Hero theme="light" />
     <div className="container">
       <div className="articles">
-        <h3>Featured Articles</h3>
-        <span>
-          <Link to="/articles">See All Articles</Link>
-        </span>
+        <ListSummary
+          heading={"Featured Articles"}
+          theme="light"
+          link={"/articles"}
+        />
+
         <ul>
           {data.Articles.nodes.map((node) => (
             <li key={node.id}>
@@ -34,10 +37,8 @@ const IndexPage = ({ data }) => (
         </ul>
       </div>
       <div className="seeds">
-        <h3>Garden Seeds</h3>
-        <span>
-          <Link to="/garden">See All Garden Seeds</Link>
-        </span>
+        <ListSummary heading={"Garden Seeds"} theme="light" link={"/garden"} />
+
         <ul>
           {data.Garden.nodes.map((node) => (
             <li key={node.id}>

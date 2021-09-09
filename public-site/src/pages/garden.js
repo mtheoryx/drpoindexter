@@ -18,7 +18,7 @@ const GardenIndexPage = ({ data }) => (
         },
       ]}
     />
-    <h2>Garden</h2>
+    <h2>Digital Garden, seeds grow here</h2>
 
     <ul style={{ listStyle: "none" }}>
       {data.Garden.nodes.map((node) => (

@@ -17,7 +17,7 @@ const ArticlesIndexPage = ({ data }) => (
         },
       ]}
     />
-    <h2>Articles and Opinion</h2>
+    <h2>Digital Garden Nearing Harvest</h2>
 
     <ul style={{ listStyle: "none" }}>
       {data.Articles.nodes.map((node) => (
