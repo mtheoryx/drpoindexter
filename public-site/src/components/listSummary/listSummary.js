@@ -21,7 +21,7 @@ const ListSummaryWrapper = styled.div`
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  align-items: center;
+  align-items: bottom;
 `
 
 const ListSummaryHeader = styled.h3`

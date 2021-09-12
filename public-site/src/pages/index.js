@@ -1,14 +1,20 @@
 import React from "react"
 import Helmet from "react-helmet"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import ListSummary from "../components/listSummary"
+import ArticleItem from "../components/articleItem"
 
 const Container = styled.div`
-  max-width: 700px;
+  max-width: 850px;
   margin: 0 auto;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
 `
 
 const IndexPage = ({ data }) => (
@@ -37,7 +43,15 @@ const IndexPage = ({ data }) => (
         <ul>
           {data.Articles.nodes.map((node) => (
             <li key={node.id}>
-              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+              <ArticleItem
+                theme="light"
+                article={{
+                  id: node.id,
+                  title: node.frontmatter.title,
+                  description: node.frontmatter.description,
+                }}
+                link={node.fields.slug}
+              />
             </li>
           ))}
         </ul>
@@ -48,7 +62,14 @@ const IndexPage = ({ data }) => (
         <ul>
           {data.Garden.nodes.map((node) => (
             <li key={node.id}>
-              <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
+              <ArticleItem
+                theme="light"
+                article={{
+                  id: node.id,
+                  title: node.frontmatter.title,
+                }}
+                link={node.fields.slug}
+              />
             </li>
           ))}
         </ul>
