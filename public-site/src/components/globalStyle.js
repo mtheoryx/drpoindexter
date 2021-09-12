@@ -8,8 +8,11 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     margin: 0;
+    font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @import url('https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&family=Roboto&family=Roboto+Slab:wght@700&display=swap');
+    background: #FFF6FF !important;
   }
   article,
   aside,

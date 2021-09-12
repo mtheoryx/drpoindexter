@@ -1,5 +1,6 @@
 ---
 title: "Radius-based location search with DynamoDB"
+status: "featured"
 ---
 
 ### My Final Code Example

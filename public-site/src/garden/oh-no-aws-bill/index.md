@@ -1,5 +1,6 @@
 ---
 title: "Isn't AWS expensive?"
+status: "featured"
 ---
 
 Well, not inherently, no.

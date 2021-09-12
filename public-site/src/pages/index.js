@@ -1,31 +1,19 @@
 import React from "react"
 import Helmet from "react-helmet"
-import styled from "styled-components"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 import Layout from "../components/layout"
-import { RoundImage } from "../components/profileImage"
+import Hero from "../components/hero"
+import ListSummary from "../components/listSummary"
+import ArticleItem from "../components/articleItem"
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-`
-
-const Side = styled.div`
-  display: none;
-  @media screen and (min-width: 740px) {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin: 0 5%;
-  }
-`
-
-const Main = styled.div`
-  width: 100%;
-  @media screen and (min-width: 740px) {
-    width: 50%;
-    margin: 0 5%;
+  max-width: 850px;
+  margin: 0 auto;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
   }
 `
 
@@ -43,61 +31,49 @@ const IndexPage = ({ data }) => (
         },
       ]}
     />
+    <Hero theme="light" />
     <Container>
-      <Side>
-        <RoundImage
-          src={data.profile.childImageSharp.fluid}
-          alt="Portrait picture of David Poindexter with a sepia filter and blurred background"
+      <div className="articles">
+        <ListSummary
+          heading={"Featured Articles"}
+          theme="light"
+          link={"/articles"}
         />
-      </Side>
-      <Main>
-        <h2>I’m David, a sofware engineer and cloud architect.</h2>
-        <p>
-          I specialize in <span style={{ fontWeight: 600 }}>serverless</span>{" "}
-          development, cloud{" "}
-          <span style={{ fontWeight: 600 }}>architecture</span> and
-          implementation, and <span style={{ fontWeight: 600 }}>write</span>{" "}
-          about my experiences along the way.
-        </p>
 
-        <h3>What you'll find here</h3>
-
-        <p>
-          A collection of things I learn along the way, sometimes really
-          interesting, sometimes small observations. I keep collections of
-          notes, a produce some more structured content in the form of articles.
-        </p>
         <ul>
-          <li>Programming (mostly Node/JS)</li>
-          <li>Hardware (IoT and other fun stuff)</li>
-          <li>Docker! Lots of Docker</li>
-          <li>AWS architecture and hands-on experience</li>
-          <li>Industry observations</li>
-          <li>Content and media production</li>
+          {data.Articles.nodes.map((node) => (
+            <li key={node.id}>
+              <ArticleItem
+                theme="light"
+                article={{
+                  id: node.id,
+                  title: node.frontmatter.title,
+                  description: node.frontmatter.description,
+                }}
+                link={node.fields.slug}
+              />
+            </li>
+          ))}
         </ul>
+      </div>
+      <div className="seeds">
+        <ListSummary heading={"Garden Seeds"} theme="light" link={"/garden"} />
 
-        <h3>Some Extras</h3>
-
-        <p>
-          I also stream Live Coding, IoT, and hardware 3 days a week over on{" "}
-          <a
-            href="https://www.twitch.tv/roberttables"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            my Twitch community
-          </a>
-          , and I am one of the original members of the{" "}
-          <a
-            href="https://livecoders.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Twitch Live Coders Team
-          </a>
-          .
-        </p>
-      </Main>
+        <ul>
+          {data.Garden.nodes.map((node) => (
+            <li key={node.id}>
+              <ArticleItem
+                theme="light"
+                article={{
+                  id: node.id,
+                  title: node.frontmatter.title,
+                }}
+                link={node.fields.slug}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
     </Container>
   </Layout>
 )
@@ -110,6 +86,42 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 277) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    Articles: allMdx(
+      filter: {
+        fileAbsolutePath: { regex: "/articles/" }
+        frontmatter: { status: { eq: "featured" } }
+      }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      nodes {
+        id
+        frontmatter {
+          title
+          date
+          description
+        }
+        fields {
+          slug
+        }
+      }
+    }
+    Garden: allMdx(
+      filter: {
+        fileAbsolutePath: { regex: "/garden/" }
+        frontmatter: { status: { eq: "featured" } }
+      }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      nodes {
+        id
+        frontmatter {
+          title
+        }
+        fields {
+          slug
         }
       }
     }
