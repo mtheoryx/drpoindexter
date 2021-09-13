@@ -36,15 +36,15 @@ const SEO = () => {
       meta={[
         {
           name: `description`,
-          content: site.metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:title`,
-          content: site.title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
-          content: site.metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:type`,
@@ -60,11 +60,11 @@ const SEO = () => {
         },
         {
           name: `twitter:title`,
-          content: site.title,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
-          content: site.metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           name: `twitter:image`,
