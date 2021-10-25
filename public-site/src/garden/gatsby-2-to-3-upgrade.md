@@ -5,8 +5,8 @@ title: "Upgrading this site from Gatsby version 2 to version 3"
 ## Known stuff to do
 
 - [x] Take care of existing Dependabot PRs (verify builds in Amplify, my god these take a long time)
-- [ ] Clean up some old branches
-- [ ] Clean up old Amplify connected branches
+- [x] Clean up some old branches
+- [x] Clean up old Amplify connected branches
 - [ ] Make a fresh branch for the upgrade process
 - [ ] Make a fresh connected build in Amplify for upgrade branch
 - [ ] Follow the [Gatsby Upgrade Guide](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#introduction)
@@ -40,3 +40,5 @@ frontend:
     paths:
       - public-site/node_modules/**/*
 ```
+
+Deleting the connected branch in Github also removes the Amplify branch-based preview. You may need to refresh to see the change in Amplify Console.
