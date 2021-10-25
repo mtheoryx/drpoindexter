@@ -78,7 +78,7 @@ Oof, tslint is out of date, needs v5.18, only had v5.15
 
 `npm install --save-dev tslint@5.18`
 
-```sh
+```shell
 $ > npx tslint-to-eslint-config --prettier
 npx: installed 60 in 4.1s
 
@@ -99,7 +99,7 @@ npx: installed 60 in 4.1s
 
 Whoa, okay, one thing at a time! Let's get those other packages installed first.
 
-```sh
+```shell
 npm install @angular-eslint/eslint-plugin @typescript-eslint/eslint-plugin-tslint eslint-config-prettier eslint-plugin-import eslint-plugin-jsdoc eslint-plugin-prefer-arrow --save-dev
 ```
 
@@ -115,7 +115,7 @@ Remove an entry from extends in the .eslintrc.js file.
 
 I think we're good to go, let's see what we get!
 
-```sh
+```shell
 ✖ 98302 problems (97248 errors, 1054 warnings)
   90828 errors and 0 warnings potentially fixable with the `--fix` option.
 ```

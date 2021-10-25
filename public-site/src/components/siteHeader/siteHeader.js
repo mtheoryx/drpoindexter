@@ -1,17 +1,11 @@
 import React from "react"
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 import colors from "../colors"
 
 import Logo from "../logo"
 import SiteTitle from "../siteTitle"
 import SiteNav from "../siteNav"
 
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Faustina:wght@700&display=swap');
-  body {
-    font-size: 16px;
-  }
-`
 const lightTheme = Object.assign({
   colors: {
     Background: colors.purple,
@@ -51,7 +45,6 @@ const SiteHeader = ({ theme }) => {
   return (
     <ThemeProvider theme={themeMode}>
       <StyledSiteHeader>
-        <GlobalStyle />
         <StyledHeaderWrapper>
           <WordMarkWrapper>
             <Logo theme={theme} />

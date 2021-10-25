@@ -6,9 +6,9 @@ title: "Upgrading this site from Gatsby version 2 to version 3"
 
 - [x] Take care of existing Dependabot PRs (verify builds in Amplify, my god these take a long time)
 - [x] Clean up some old branches
-- [x] Clean up old Amplify connected branches
-- [ ] Make a fresh branch for the upgrade process
-- [ ] Make a fresh connected build in Amplify for upgrade branch
+- [x] Clean up old Amplify connected branches (automatic, see below)
+- [x] Make a fresh branch for the upgrade process
+- [x] Make a fresh connected build in Amplify for upgrade branch (automatic, see below)
 - [ ] Follow the [Gatsby Upgrade Guide](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#introduction)
 - [ ] Fix any broken functionality from upgrade breaking changes
 - [ ] PR and deploy production site
@@ -42,3 +42,7 @@ frontend:
 ```
 
 Deleting the connected branch in Github also removes the Amplify branch-based preview. You may need to refresh to see the change in Amplify Console.
+
+Additionally, I have a branch name-matching configuration that will pick up any branch that starts with `feat/` in Github, and create a preview environment in Amplify. It works really seamlessly.
+
+Using yarn to upgrade interactive to latest... is problematic. Gatsby v4 is now the latest. I don't know an easy way to automatically update just to what gatsby 3 would want (or to what versions need only gatsby 3)

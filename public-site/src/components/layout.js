@@ -7,15 +7,19 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Helmet from "react-helmet"
 import Header from "./siteHeader"
 import Footer from "./footer"
 import GlobalStyle from "./globalStyle.js"
-import SEO from "./seo"
+import Seo from "./seo"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <SEO />
+      <Seo />
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@400;700&family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"/>
+      </Helmet>
       <GlobalStyle />
       <Header theme="light" />
 

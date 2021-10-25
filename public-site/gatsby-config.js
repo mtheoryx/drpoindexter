@@ -42,14 +42,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: `https://www.dpoindexter.com`,
-        sitemap: `https://www.dpoindexter.com/sitemap.xml`,
-        policy: [{ userAgent: "*", disallow: "" }],
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-robots-txt",
+    //   options: {
+    //     host: `https://www.dpoindexter.com`,
+    //     sitemap: `https://www.dpoindexter.com/sitemap.xml`,
+    //     policy: [{ userAgent: "*", disallow: "" }],
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -91,12 +91,12 @@ module.exports = {
       options: {
         extensions: [`.md`, `.mdx`],
         gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-copy-relative-linked-files`,
-            options: {
-              ignoreFileExtensions: [".md", ".png", ".jpg", ".jpeg"],
-            },
-          },
+          // {
+          //   resolve: `gatsby-remark-copy-relative-linked-files`,
+          //   options: {
+          //     ignoreFileExtensions: [".md", ".png", ".jpg", ".jpeg"],
+          //   },
+          // },
           {
             resolve: `gatsby-remark-images`,
             options: {

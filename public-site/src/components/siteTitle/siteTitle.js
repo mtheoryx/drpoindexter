@@ -1,14 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 import colors from "../colors"
-
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Faustina:wght@700&display=swap');
-  body {
-    font-size: 16px;
-  }
-`
 
 const fonts = {
   fonts: {
@@ -60,7 +53,6 @@ const SiteTitle = ({ theme }) => {
   const themeMode = theme === "light" ? lightTheme : darkTheme
   return (
     <ThemeProvider theme={themeMode}>
-      <GlobalStyle />
       <StyledSiteTitle>
         <Link to="/">David Poindexter</Link>
       </StyledSiteTitle>
