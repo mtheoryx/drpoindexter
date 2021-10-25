@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import BackToListNav from "../components/backToListNav/backToListNav"
 
 const Container = styled.div`
@@ -14,7 +14,7 @@ const Container = styled.div`
 
 const ArticleDetailTemplate = ({ data }) => (
   <Layout>
-    <SEO
+    <Seo
       title={data.mdx.frontmatter.title}
       description={data.mdx.frontmatter.description}
     />
