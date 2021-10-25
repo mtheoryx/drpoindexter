@@ -16,7 +16,13 @@
     "activityBarBadge.foreground": "#15202b",
     "statusBar.background": "#663399",
     "statusBar.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#7f40bf"
+    "statusBarItem.hoverBackground": "#7f40bf",
+    "editorGroup.border": "#7f40bf",
+    "panel.border": "#7f40bf",
+    "sash.hoverBorder": "#7f40bf",
+    "sideBar.border": "#7f40bf",
+    "statusBarItem.remoteBackground": "#663399",
+    "statusBarItem.remoteForeground": "#e7e7e7"
   },
   "git.ignoreLimitWarning": true,
   "peacock.color": "#663399",
