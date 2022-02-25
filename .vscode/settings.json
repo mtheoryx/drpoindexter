@@ -56,5 +56,6 @@
     "!ImportValue sequence",
     "!Select",
     "!Split"
-  ]
+  ],
+  "snyk.advanced.additionalParameters": "--path ./public-site/"
 }
