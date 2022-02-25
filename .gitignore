@@ -190,4 +190,4 @@ amplifyxc.config
 
 # Obsidian Config
 public-site/src/garden/.obsidian/*
-
+.dccache
