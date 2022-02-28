@@ -93,7 +93,7 @@ const IndexPage = () => (
 
       <p>
         I transitioned to custom application development, and was offered a
-        Proffessional Staff position at Indiana University. I've since embraced
+        Professional Staff position at Indiana University. I've since embraced
         several unique types of challenges in private sector including
         financial, education, and medical industries.
       </p>
