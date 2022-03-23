@@ -19,7 +19,7 @@
     "aws-amplify": "^4.3.14",
     "gatsby": "^4.8.1",
     "gatsby-plugin-humans-txt": "^1.1.4",
-    "gatsby-plugin-image": "^2.0.0",
+    "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-manifest": "^4.0.0",
     "gatsby-plugin-mdx": "^3.8.0",
     "gatsby-plugin-offline": "^5.0.0",
