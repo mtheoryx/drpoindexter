@@ -42,7 +42,7 @@
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
-    "styled-components": "^5.3.3",
+    "styled-components": "^5.3.5",
     "styled-icons": "^10.34.0",
     "typography": "^0.16.19",
     "typography-theme-ocean-beach": "^0.16.19"
