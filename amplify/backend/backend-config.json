@@ -1,4 +1,14 @@
 {
-	"auth": {},
-	"analytics": {}
+	"auth": {
+		"cognito63c9e687": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"analytics": {
+		"dpoindexter": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	}
 }
