@@ -58,5 +58,5 @@
     "!Select",
     "!Split"
   ],
-  "snyk.advanced.additionalParameters": "--path ./public-site/"
+  "snyk.advanced.additionalParameters": "--file=./public-site/package.json"
 }
