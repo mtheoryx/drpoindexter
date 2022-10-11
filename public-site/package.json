@@ -69,5 +69,6 @@
   },
   "bugs": {
     "url": "https://github.com/mtheoryx/drpoindexter"
-  }
+  },
+  "packageManager": "yarn@3.2.4"
 }
