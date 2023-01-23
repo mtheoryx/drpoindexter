@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "aws-amplify": "^4.3.45",
+    "aws-amplify": "^5.0.11",
     "gatsby": "^4.25.4",
     "gatsby-plugin-humans-txt": "^1.1.4",
     "gatsby-plugin-image": "^2.25.0",
