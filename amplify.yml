@@ -6,6 +6,7 @@ frontend:
         - cd public-site
         - nvm install
         - nvm use
+        - yarn cache clean
         - yarn install
     build:
       commands:
