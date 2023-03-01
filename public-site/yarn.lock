@@ -13308,7 +13308,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-helmet: ^6.1.0
-    react-typography: ^0.16.20
+    react-typography: ^0.16.23
     styled-components: ^5.3.6
     styled-icons: ^10.46.0
     typography: ^0.16.21
@@ -22890,12 +22890,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-typography@npm:^0.16.20":
-  version: 0.16.20
-  resolution: "react-typography@npm:0.16.20"
+"react-typography@npm:^0.16.23":
+  version: 0.16.23
+  resolution: "react-typography@npm:0.16.23"
   peerDependencies:
-    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 610f59de95dda917d5c48668b829d2eea4f255f381258663a81717f7360f84574061362b68a1be1c3b519c6b0b1df9659262af07f9b4fe55a95a5b8d372a6234
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: f60480565a9ce3077744da0e5c017a44e68f978d86f0d9fa7e38f25905444bc74429a0bfe6302b2ca90d4e40b75d23fda389665a7c6635abe6e3f1bc63f43a97
   languageName: node
   linkType: hard
 
